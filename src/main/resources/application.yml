@@ -1,0 +1,61 @@
+spring:
+  application:
+    name: ToDoList
+  
+  # 數據庫配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/todo_db?useSSL=false&serverTimezone=Asia/Taipei&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+    username: root
+    password: 12345678
+  
+  # Thymeleaf 配置
+  thymeleaf:
+    mode: HTML
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+  
+  # Spring MVC 配置
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+    format:
+      date: yyyy-MM-dd
+      date-time: yyyy-MM-dd HH:mm:ss
+      time: HH:mm:ss
+  
+  web:
+    resources:
+      add-mappings: false
+
+# 服務器配置
+server:
+  port: 8080
+  servlet:
+    context-path: /TODO
+    session:
+      timeout: 30m
+  tomcat:
+    uri-encoding: UTF-8
+  error:
+    whitelabel:
+      enabled: false
+    include-stacktrace: never
+    include-message: always
+
+# 日誌配置
+logging:
+  level:
+    root: INFO
+    com:
+      example: DEBUG
+  file:
+    name: logs/todo-app.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
