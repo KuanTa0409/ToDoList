@@ -5,7 +5,7 @@ spring:
   # 數據庫配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/todo_db?useSSL=false&serverTimezone=Asia/Taipei&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/todo_db?serverTimezone=UTC&characterEncoding=utf-8&useUnicode=true
     username: root
     password: 12345678
   
@@ -35,7 +35,7 @@ spring:
 
 # 服務器配置
 server:
-  port: 8080
+  port: 8081
   servlet:
     context-path: /TODO
     session:
