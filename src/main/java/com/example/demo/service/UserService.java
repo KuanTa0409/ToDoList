@@ -38,4 +38,9 @@ public class UserService {
 		userDao.save(user);
 		log.info("用戶註冊成功: {}", user.getUsername());
 	}
+	
+	public User getUserByUsername(String username) {
+		return userDao.findByUsername(username)
+				.orElseThrow(() -> new RuntimeException("用戶不存在!"));
+	}
 }
