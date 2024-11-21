@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
+import java.util.Optional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,5 +44,14 @@ public class UserService {
 	public User getUserByUsername(String username) {
 		return userDao.findByUsername(username)
 				.orElseThrow(() -> new RuntimeException("用戶不存在!"));
+	}
+	
+	public void pass(String username, String password) {
+		User user = userDao.findByUsername(username)
+				.orElseThrow(() -> new RuntimeException("用戶不存在"));
+		
+		if(!passwordEncoder.matches(password, user.getPassword())) {
+			throw new RuntimeException("密碼錯誤");
+		}
 	}
 }
