@@ -19,18 +19,18 @@ public class SecurityConfig {
             // URL訪問權限配置（使用新的authorizeHttpRequests方法 替代已棄用的authorizeRequests）
             .authorizeHttpRequests(auth -> auth
                 // 允許所有人訪問的路徑，不需要認證                
-                .requestMatchers("/register/**", "/css/**", "/js/**").permitAll()
+                .requestMatchers("/auth/**", "/css/**", "/js/**").permitAll()
                 // 所有其他請求都 需要認證
                 .anyRequest().authenticated()
             )
             
             // 登入配置
             .formLogin(form -> form
-                .loginPage("/login") // 自定義登入頁面的路徑
+                .loginPage("/auth/login") // 自定義登入頁面的路徑
                 // 登入表單 提交的處理路徑（預設是/login）
-                .loginProcessingUrl("/login")
-                .defaultSuccessUrl("/home")      // 登入成功後 跳轉的頁面
-                .failureUrl("/login?error=true") // 登入失敗後 跳轉的頁面
+                .loginProcessingUrl("/auth/login")
+                .defaultSuccessUrl("/user/index")      // 登入成功後 跳轉的頁面
+                .failureUrl("/auth/login?error=true") // 登入失敗後 跳轉的頁面
                 .permitAll()  //登入相關的頁面 可以被所有人訪問
             )
             

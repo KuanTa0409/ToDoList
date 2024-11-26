@@ -27,7 +27,7 @@ public class AuthController {
 	@Autowired
 	private UserService userService;
 	
-	// 顯示登入頁面
+	// 登入頁面
 	@GetMapping("/login")        
 	public String loginPage() {  // URL(Get): /auth/login
 		return "auth/login";
