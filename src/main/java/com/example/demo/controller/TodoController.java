@@ -1,12 +1,14 @@
 package com.example.demo.controller;
 
 import java.security.Principal;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -83,6 +85,7 @@ public class TodoController {
 	}
 	
 	// 刪除
+	@DeleteMapping("/{index}")
 	public String delete(@Valid @ModelAttribute Todo todo, RedirectAttributes attr,
 						 @PathVariable("index") int index, Principal principal) {
 		try {
@@ -100,7 +103,36 @@ public class TodoController {
 	    }
 	}
 	
-	
+	// 更新待辦事項狀態
+	@PostMapping("/{index}/toggle")
+    public String toggleStatus(@PathVariable("index") int index,
+                               Principal principal,RedirectAttributes attr) {
+        try {
+            // 1. 獲取該用戶的所有待辦事項
+            List<Todo> todos = todoService.getUserTodos(principal.getName());
+        
+            // 2. 獲取並更新指定待辦事項的狀態
+            Todo todo = todos.get(index);
+            todo.setCompleted(!todo.isCompleted());
+            todo.setUpdatedAt(LocalDateTime.now());
+            
+            // 3. 更新待辦事項
+            todos.set(index, todo);
+            
+            // 4. 添加成功訊息
+            attr.addFlashAttribute("message", todo.isCompleted() ? "完成" : "未完成");
+            
+            // 5. 返回待辦事項列表頁面
+            return "redirect:/todos/";
+            
+        } catch (IndexOutOfBoundsException e) {
+            attr.addFlashAttribute("message", "更新狀態錯誤：索引不存在");
+            return "redirect:error";
+        } catch (Exception e) {
+            attr.addFlashAttribute("message", "更新狀態錯誤：" + e.getMessage());
+            return "redirect:error";
+        }
+    }
 	
 	// 操作成功
 	@GetMapping(value = { "/addOK", "/updateOK", "/deleteOK" })
