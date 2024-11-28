@@ -20,7 +20,7 @@ public class Todo {
 	
 	private LocalDateTime updatedAt; //自動 更新時間
 	
-	//多(Todo)對一(User)，多方維護)
+	//多(Todo)對一(User)，多方維護
 	private User user;
 
 	public Long getTid() {
