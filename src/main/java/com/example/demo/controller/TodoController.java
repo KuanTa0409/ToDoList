@@ -41,10 +41,13 @@ public class TodoController {
 	// 查詢單一待辦事項
 	@GetMapping("/{index}")
 	public String get(Model model, Principal principal, 
-			          @PathVariable("index")int index,
+			          @PathVariable("index")Long index,
 			          @RequestParam(value = "action", required = false)String action) {
-		List<Todo> todos = todoService.getUserTodos(principal.getName());
-		Todo todo = todos.get(index);
+		Todo todo = todoService.getTodo(index);
+		// 驗證當前用戶是否有權限查看此待辦事項
+	    if (!todo.getTusername().equals(principal.getName())) {
+	        throw new RuntimeException("無權訪問此待辦事項");
+	    }
 		model.addAttribute("index", index);
 		model.addAttribute("todo", todo);
 		if(action != null && action.equals("delete")) {
@@ -55,10 +58,10 @@ public class TodoController {
 	
 	// 新增待辦
 	@PostMapping("/")
-	public String add(@Valid @ModelAttribute Todo todo, RedirectAttributes attr,
-			          BindingResult result, Principal principal) {
+	public String add(@Valid @ModelAttribute Todo todo, BindingResult result,
+					  RedirectAttributes attr, Principal principal) {
 		if(result.hasErrors()) {
-			return "redirect:error";
+			return "todo";
 		}
 		List<Todo> todos = todoService.getUserTodos(principal.getName());
 		todos.add(todo);
@@ -70,9 +73,9 @@ public class TodoController {
 	
 	// 修改
 	@PutMapping("/{index}")
-	public String update(@Valid @ModelAttribute Todo todo, RedirectAttributes attr,
-			          	BindingResult result, Principal principal,
-			          	@PathVariable("index") int index) {
+	public String update(@Valid @ModelAttribute Todo todo, BindingResult result,
+			  			 RedirectAttributes attr, Principal principal,
+			          	 @PathVariable("index") int index) {
 		if(result.hasErrors()) {
 			return "redirect:error";
 		}
@@ -144,5 +147,11 @@ public class TodoController {
 	@GetMapping(value = "/error")
 	public String error() {
 		return "error";
+	}
+	
+	private void validateUserAccess(String username, Todo todo) {
+	    if (!todo.getTusername().equals(username)) {
+	        throw new RuntimeException("無權操作此待辦事項");
+	    }
 	}
 }

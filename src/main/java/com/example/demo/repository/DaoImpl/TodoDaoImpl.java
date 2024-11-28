@@ -1,5 +1,6 @@
 package com.example.demo.repository.DaoImpl;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -45,10 +46,11 @@ public class TodoDaoImpl implements TodoDao {
 
 	@Override
 	public void update(Todo todo) {
-		String sql = "UPDATE todo SET description = ?, completed = ? WHERE tid = ?";
+		String sql = "UPDATE todo SET description = ?, completed = ?, updated_at = ? WHERE tid = ?";
         jdbcTemplate.update(sql,
             todo.getDescription(),
             todo.isCompleted(),
+            LocalDateTime.now(),
             todo.getTid()
         );
 	}

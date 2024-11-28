@@ -38,7 +38,7 @@ public class SecurityConfig {
             .logout(logout -> logout
                 // 設定登出的請求路徑
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                .logoutSuccessUrl("/login?logout=true") // 登出成功後 跳轉的頁面
+                .logoutSuccessUrl("/auth/login?logout=true") // 登出成功後 跳轉的頁面
                 .clearAuthentication(true)   // 登出時 清除認證信息
                 .invalidateHttpSession(true) // session失效
                 .deleteCookies("JSESSIONID") // 清除cookie

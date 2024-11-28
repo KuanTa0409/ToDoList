@@ -58,7 +58,7 @@ public class UserController {
 		UserDetail userDetail = new UserDetail();
 		userDetail.setUid(userId);
 		model.addAttribute("userDetail", userDetail);
-		return "register_detail";
+		return "user/register_detail";
 	}
 	
 	// 註冊(第二頁)的表單提交

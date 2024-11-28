@@ -24,11 +24,13 @@ public class UserDetailService {
 		log.info("保存成功!: {}", userDetail.getUid());
 	}
 	
+	@Transactional(readOnly = true)  
 	public UserDetail getUserDetail(Long uid) {
 		return userDetailDao.findById(uid)
 				.orElseThrow(() -> new RuntimeException("用戶資料不存在!"));
 	}
 	
+	@Transactional
 	public void updateUserDetail(UserDetail userDetail) {
 		log.info("Update user detail for uid: {}", userDetail.getUid());
 		userDetailDao.save(userDetail);
