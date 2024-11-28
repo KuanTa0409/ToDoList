@@ -108,24 +108,16 @@ public class TodoController {
 	
 	// 更新待辦事項狀態
 	@PostMapping("/{index}/toggle")
-    public String toggleStatus(@PathVariable("index") int index,
+    public String toggleStatus(@PathVariable("index") Long index,
                                Principal principal,RedirectAttributes attr) {
         try {
-            // 1. 獲取該用戶的所有待辦事項
-            List<Todo> todos = todoService.getUserTodos(principal.getName());
-        
-            // 2. 獲取並更新指定待辦事項的狀態
-            Todo todo = todos.get(index);
+            Todo todo = todoService.getTodo(index);
+            validateUserAccess(principal.getName(), todo);
             todo.setCompleted(!todo.isCompleted());
             todo.setUpdatedAt(LocalDateTime.now());
+            todoService.updateTodo(todo);
             
-            // 3. 更新待辦事項
-            todos.set(index, todo);
-            
-            // 4. 添加成功訊息
             attr.addFlashAttribute("message", todo.isCompleted() ? "完成" : "未完成");
-            
-            // 5. 返回待辦事項列表頁面
             return "redirect:/todos/";
             
         } catch (IndexOutOfBoundsException e) {

@@ -42,15 +42,15 @@ public class AuthController {
 	
 	// 註冊(第一頁)的表單提交
 	@PostMapping("/register")                 // URL(Post): /auth/register
-	public String processRegister(@Valid @ModelAttribute("user") User user, 
-			                      @RequestParam("confirm") String confirm, 
-			                      BindingResult result, HttpSession session) {
+	public String processRegister(@Valid @ModelAttribute("user") User user, BindingResult result, 
+			                      @RequestParam("confirm") String confirm, HttpSession session) {
 		log.info("用戶註冊: {}", user.getUsername());
-		if(!user.getPassword().equals(confirm)) {
-			result.rejectValue("password", "error.user", "密碼不相符");
+		// 先檢查驗證結果， 再比較密碼
+		if(result.hasErrors()) {  // 有驗證錯誤，返回註冊頁面
 			return "auth/register";
 		}
-		if(result.hasErrors()) {  // 有驗證錯誤，返回註冊頁面
+		if(!user.getPassword().equals(confirm)) {
+			result.rejectValue("password", "error.user", "密碼不相符");
 			return "auth/register";
 		}
 		
