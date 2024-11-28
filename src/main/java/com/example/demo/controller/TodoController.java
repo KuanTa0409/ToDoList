@@ -39,21 +39,22 @@ public class TodoController {
 	}
 	
 	// 查詢單一待辦事項
-	@GetMapping("/{index}")
+	@GetMapping("/{id}")
 	public String get(Model model, Principal principal, 
-			          @PathVariable("index")Long index,
+			          @PathVariable("id")Long id,
 			          @RequestParam(value = "action", required = false)String action) {
-		Todo todo = todoService.getTodo(index);
-		// 驗證當前用戶是否有權限查看此待辦事項
-	    if (!todo.getTusername().equals(principal.getName())) {
-	        throw new RuntimeException("無權訪問此待辦事項");
-	    }
-		model.addAttribute("index", index);
-		model.addAttribute("todo", todo);
-		if(action != null && action.equals("delete")) {
-			return "todo_delete";
+		try {
+			Todo todo = todoService.getTodo(id);
+			validateUserAccess(principal.getName(), todo);
+			model.addAttribute("todo", todo);
+			if("delete".equals(action)) {
+				return "todo/todo_delete";
+			}
+			return "todo/todo_update";
+		} catch (Exception e) {
+			model.addAttribute("error", e.getMessage());
+	        return "redirect:error";
 		}
-		return "todo_update";
 	}
 	
 	// 新增待辦
@@ -72,15 +73,15 @@ public class TodoController {
 	}
 	
 	// 修改
-	@PutMapping("/{index}")
+	@PutMapping("/{id}")
 	public String update(@Valid @ModelAttribute Todo todo, BindingResult result,
 			  			 RedirectAttributes attr, Principal principal,
-			          	 @PathVariable("index") int index) {
+			          	 @PathVariable("id") int id) {
 		if(result.hasErrors()) {
 			return "redirect:error";
 		}
 		List<Todo> todos = todoService.getUserTodos(principal.getName());
-		todos.set(index, todo);
+		todos.set(id, todo);
 		// 將 todo 物件資料傳遞給 /updateOK，再傳給 success.html 顯示, 可以防止二次 submit
 		attr.addFlashAttribute("todo", todo); 
 		attr.addFlashAttribute("message","修改成功");
@@ -88,12 +89,12 @@ public class TodoController {
 	}
 	
 	// 刪除
-	@DeleteMapping("/{index}")
+	@DeleteMapping("/{id}")
 	public String delete(@Valid @ModelAttribute Todo todo, RedirectAttributes attr,
-						 @PathVariable("index") int index, Principal principal) {
+						 @PathVariable("id") int id, Principal principal) {
 		try {
 			List<Todo> todos = todoService.getUserTodos(principal.getName());
-			Todo removeTodo = todos.remove(index);
+			Todo removeTodo = todos.remove(id);
 			attr.addFlashAttribute("removeTodo", removeTodo);
 	        attr.addFlashAttribute("message", "刪除成功");
 	        return "redirect:deleteOK";
@@ -107,11 +108,11 @@ public class TodoController {
 	}
 	
 	// 更新待辦事項狀態
-	@PostMapping("/{index}/toggle")
-    public String toggleStatus(@PathVariable("index") Long index,
+	@PostMapping("/{id}/toggle")
+    public String toggleStatus(@PathVariable("id") Long id,
                                Principal principal,RedirectAttributes attr) {
         try {
-            Todo todo = todoService.getTodo(index);
+            Todo todo = todoService.getTodo(id);
             validateUserAccess(principal.getName(), todo);
             todo.setCompleted(!todo.isCompleted());
             todo.setUpdatedAt(LocalDateTime.now());
