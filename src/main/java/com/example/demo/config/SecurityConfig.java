@@ -18,8 +18,10 @@ public class SecurityConfig {
         http
             // URL訪問權限配置（使用新的authorizeHttpRequests方法 替代已棄用的authorizeRequests）
             .authorizeHttpRequests(auth -> auth
-                // 允許所有人訪問的路徑，不需要認證                
-                .requestMatchers("/auth/**", "/css/**", "/js/**").permitAll()
+        		// 允許靜態資源訪問
+                .requestMatchers("/images/**", "/css/**", "/js/**").permitAll()
+                // 允許登入、註冊相關頁面
+                .requestMatchers("/auth/**").permitAll()
                 // 所有其他請求都 需要認證
                 .anyRequest().authenticated()
             )
