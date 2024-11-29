@@ -36,6 +36,35 @@
                 <div class="text-center mt-5">
                     <img th:src="@{/images/todo-list.png}" alt="TodoList" class="img-fluid mb-4" style="max-width: 400px;">
                     <h2 class="mb-4">ToDoList管理系統</h2>
+                    
+                    <!-- 天氣資訊 -->
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header bg-info text-white">
+                                    <h5 class="mb-0">台灣天氣資訊</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row" th:if="${not #lists.isEmpty(weatherInfo)}">
+                                        <div class="col-md-4 mb-3" th:each="weather : ${weatherInfo}">
+                                            <div class="card h-100">
+                                                <div class="card-body">
+                                                    <h6 class="card-title" th:text="${weather.location}">地點</h6>
+                                                    <p class="card-text" th:text="'溫度: ' + ${weather.temperature}">溫度</p>
+                                                    <p class="card-text" th:text="'濕度: ' + ${weather.humidity}">濕度</p>
+                                                    <p class="card-text" th:text="${weather.description}">天氣描述</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-warning" th:if="${#lists.isEmpty(weatherInfo)}">
+                                        暫時無法獲取天氣資訊
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">歡迎回來！</h5>
