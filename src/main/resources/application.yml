@@ -48,6 +48,11 @@ server:
     include-stacktrace: never
     include-message: always
 
+# 氣象局 API 設定
+weather:
+  api: 
+    key: CWA-0D7B6DEE-F1B7-48CA-9538-0DF8DB6DF494
+
 # 日誌配置
 logging:
   level:

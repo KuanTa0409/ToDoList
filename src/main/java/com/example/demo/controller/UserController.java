@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import java.security.Principal;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,8 +16,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.entity.User;
 import com.example.demo.entity.UserDetail;
+import com.example.demo.entity.Weather;
 import com.example.demo.service.UserDetailService;
 import com.example.demo.service.UserService;
+import com.example.demo.service.WeatherService;
 
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
@@ -33,6 +36,9 @@ public class UserController {
 	@Autowired
 	private UserDetailService userDetailService;
 	
+	@Autowired
+	private WeatherService weatherService;
+	
 	// 主頁
 	@GetMapping("/index")   // URL(Get): /user/index
 	public String index(Model model, Principal principal) {
@@ -42,6 +48,10 @@ public class UserController {
 		User user = userService.getUserByUsername(username);
 		UserDetail userDetail = userDetailService.getUserDetail(user.getId());
 		model.addAttribute("userDetail", userDetail);
+		
+		// 氣候資訊
+		List<Weather> weatherInfo = weatherService.getWeatherInfo();
+		model.addAttribute("weatherInfo", weatherInfo);
 		return "user/index";
 	}
 	
