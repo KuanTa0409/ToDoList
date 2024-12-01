@@ -38,6 +38,12 @@ public class UserService {
 		// 先加密 再存儲用戶資訊
 		user.setPassword(passwordEncoder.encode(user.getPassword()));
 		userDao.save(user);
+		
+		// 確保獲得 儲存後的ID
+		User savedUser = userDao.findByUsername(user.getUsername())
+	            .orElseThrow(() -> new RuntimeException("用戶儲存失敗"));
+	    user.setId(savedUser.getId());
+		
 		log.info("用戶註冊成功: {}", user.getUsername());
 	}
 	

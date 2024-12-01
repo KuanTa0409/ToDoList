@@ -49,7 +49,7 @@ public class UserDetailDaoImpl implements UserDetailDao {
 
 	@Override
 	public void save(UserDetail userDetail) {
-		String sql = "INSERT INTO user_details (uid, name, age, birth, gender, "
+		String sql = "INSERT INTO user_detail (uid, name, age, birth, gender, "
 				+ "education, interest, resume) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
 		// 將List<String>轉換為JSON字符串

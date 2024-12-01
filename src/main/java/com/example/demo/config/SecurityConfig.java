@@ -22,6 +22,7 @@ public class SecurityConfig {
                 .requestMatchers("/images/**", "/css/**", "/js/**").permitAll()
                 // 允許登入、註冊相關頁面
                 .requestMatchers("/auth/**").permitAll()
+                .requestMatchers("/user/register/detail").permitAll()
                 // 所有其他請求都 需要認證
                 .anyRequest().authenticated()
             )
