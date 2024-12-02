@@ -35,7 +35,7 @@ public class TodoController {
 	public String index(Model model,Principal principal) {
 		List<Todo> todos = todoService.getUserTodos(principal.getName());
 		model.addAttribute("todos", todos);
-		return "todo";
+		return "todo/todo";
 	}
 	
 	// 查詢單一待辦事項
@@ -62,7 +62,7 @@ public class TodoController {
 	public String add(@Valid @ModelAttribute Todo todo, BindingResult result,
 					  RedirectAttributes attr, Principal principal) {
 		if(result.hasErrors()) {
-			return "todo";
+			return "todo/todo";
 		}
 		List<Todo> todos = todoService.getUserTodos(principal.getName());
 		todos.add(todo);
