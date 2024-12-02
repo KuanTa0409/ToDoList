@@ -1,58 +1,218 @@
-2024-12-01 18:37:50 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 19316 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
-2024-12-01 18:37:50 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
-2024-12-01 18:37:50 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
-2024-12-01 18:37:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-12-01 18:37:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-12-01 18:37:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
-2024-12-01 18:37:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-12-01 18:37:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-12-01 18:37:52 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
-2024-12-01 18:37:52 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1869 ms
-2024-12-01 18:37:52 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+2024-12-02 11:37:45 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 15428 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-02 11:37:45 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-02 11:37:45 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-02 11:37:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-02 11:37:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-02 11:37:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-02 11:37:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-02 11:37:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-02 11:37:47 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-02 11:37:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1854 ms
+2024-12-02 11:37:47 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 97b3192f-d922-41e2-9eed-4aedfec69440
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2024-12-01 18:37:52 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6376548c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42b58756, org.springframework.security.web.context.SecurityContextHolderFilter@218654f7, org.springframework.security.web.header.HeaderWriterFilter@148501b, org.springframework.web.filter.CorsFilter@6bdebf5c, org.springframework.security.web.csrf.CsrfFilter@1b347e67, org.springframework.security.web.authentication.logout.LogoutFilter@191a9bc2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a766eff, org.springframework.security.web.session.ConcurrentSessionFilter@10808665, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d54fd70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ce0783e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77c93783, org.springframework.security.web.session.SessionManagementFilter@2bbd33b0, org.springframework.security.web.access.ExceptionTranslationFilter@3b9d7e02, org.springframework.security.web.access.intercept.AuthorizationFilter@6bb68886]
-2024-12-01 18:37:53 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-12-01 18:37:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
-2024-12-01 18:37:53 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 3.52 seconds (process running for 4.549)
-2024-12-01 18:38:01 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-01 18:38:01 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-12-01 18:38:01 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-12-01 18:39:29 [http-nio-8081-exec-4] INFO  c.e.demo.controller.AuthController - 用戶註冊: Test2
-2024-12-01 18:39:29 [http-nio-8081-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-12-01 18:39:30 [http-nio-8081-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c3f6d83
-2024-12-01 18:39:30 [http-nio-8081-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-12-01 18:39:30 [http-nio-8081-exec-4] INFO  c.example.demo.service.UserService - 開始註冊新用戶: Test2
-2024-12-01 18:39:30 [http-nio-8081-exec-4] INFO  c.example.demo.service.UserService - 用戶註冊成功: Test2
-2024-12-01 18:39:30 [http-nio-8081-exec-4] INFO  c.e.demo.controller.AuthController - 用戶註冊成功，下一步請填寫詳細資料: Test2
-2024-12-01 18:40:53 [http-nio-8081-exec-8] INFO  c.e.demo.controller.UserController - 用戶詳細資料: 9
-2024-12-01 18:40:53 [http-nio-8081-exec-8] INFO  c.e.demo.service.UserDetailService - 保存用戶詳細資料: 9
-2024-12-01 18:40:53 [http-nio-8081-exec-8] INFO  c.e.demo.service.UserDetailService - 保存成功!: 9
-2024-12-01 18:40:53 [http-nio-8081-exec-8] INFO  c.e.demo.controller.UserController - 用戶詳細資料註冊成功: 9
-2024-12-01 19:39:58 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m57s370ms776µs).
-2024-12-01 19:47:11 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m12s840ms277µs800ns).
-2024-12-01 19:52:03 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
-2024-12-01 19:52:03 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-12-01 19:52:03 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-12-01 19:52:03 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 19316 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
-2024-12-01 19:52:03 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
-2024-12-01 19:52:03 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
-2024-12-01 19:52:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
-2024-12-01 19:52:04 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-12-01 19:52:04 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-12-01 19:52:04 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
-2024-12-01 19:52:04 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 554 ms
-2024-12-01 19:52:04 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
-
-Using generated security password: d01f6b03-fb34-4df6-80f7-1c22a894d132
+Using generated security password: 2956c18a-2a12-4e82-b41f-ec41e8c0b7e9
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2024-12-01 19:52:04 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@742bcc0b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@790e71e1, org.springframework.security.web.context.SecurityContextHolderFilter@3f4e1d7b, org.springframework.security.web.header.HeaderWriterFilter@5819337d, org.springframework.web.filter.CorsFilter@59e03389, org.springframework.security.web.csrf.CsrfFilter@55ff4888, org.springframework.security.web.authentication.logout.LogoutFilter@6b0bb3cb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71e7720c, org.springframework.security.web.session.ConcurrentSessionFilter@111dcbc3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2edd4334, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bdd4c82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13dd4dab, org.springframework.security.web.session.SessionManagementFilter@3e896f92, org.springframework.security.web.access.ExceptionTranslationFilter@2fb029a2, org.springframework.security.web.access.intercept.AuthorizationFilter@2d4534a]
-2024-12-01 19:52:04 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-12-01 19:52:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
-2024-12-01 19:52:04 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 0.919 seconds (process running for 4456.157)
-2024-12-01 19:52:04 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-02 11:37:48 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@515b3f50, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a446474, org.springframework.security.web.context.SecurityContextHolderFilter@29e043a1, org.springframework.security.web.header.HeaderWriterFilter@40cee538, org.springframework.web.filter.CorsFilter@368515c8, org.springframework.security.web.csrf.CsrfFilter@2980268f, org.springframework.security.web.authentication.logout.LogoutFilter@7520e0aa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c6d1cf4, org.springframework.security.web.session.ConcurrentSessionFilter@309d2504, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f25a213, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d1581e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bd0a4c9, org.springframework.security.web.session.SessionManagementFilter@137f5ee0, org.springframework.security.web.access.ExceptionTranslationFilter@373c0697, org.springframework.security.web.access.intercept.AuthorizationFilter@15e1d3be]
+2024-12-02 11:37:48 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-02 11:37:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-02 11:37:48 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 3.393 seconds (process running for 4.363)
+2024-12-02 11:38:02 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-02 11:38:02 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-02 11:38:02 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-02 11:46:10 [http-nio-8081-exec-3] INFO  c.e.demo.controller.AuthController - 用戶註冊: Test3
+2024-12-02 11:46:10 [http-nio-8081-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-02 11:46:10 [http-nio-8081-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a73386d
+2024-12-02 11:46:10 [http-nio-8081-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-02 11:46:10 [http-nio-8081-exec-3] INFO  c.example.demo.service.UserService - 開始註冊新用戶: Test3
+2024-12-02 11:46:11 [http-nio-8081-exec-3] INFO  c.example.demo.service.UserService - 用戶註冊成功: Test3
+2024-12-02 11:46:11 [http-nio-8081-exec-3] INFO  c.e.demo.controller.AuthController - 用戶註冊成功，下一步請填寫詳細資料: Test3
+2024-12-02 11:47:25 [http-nio-8081-exec-7] INFO  c.e.demo.controller.UserController - 用戶詳細資料: 10
+2024-12-02 11:47:25 [http-nio-8081-exec-7] INFO  c.e.demo.service.UserDetailService - 保存用戶詳細資料: 10
+2024-12-02 11:47:25 [http-nio-8081-exec-7] INFO  c.e.demo.service.UserDetailService - 保存成功!: 10
+2024-12-02 11:47:25 [http-nio-8081-exec-7] INFO  c.e.demo.controller.UserController - 用戶詳細資料註冊成功: 10
+2024-12-02 11:59:21 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-02 11:59:21 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-02 11:59:21 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-02 11:59:21 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 15428 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-02 11:59:21 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-02 11:59:21 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-02 11:59:22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-02 11:59:22 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-02 11:59:22 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-02 11:59:22 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-02 11:59:22 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 648 ms
+2024-12-02 11:59:22 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6fe2fc57-b964-4817-b3e7-d269abe050dc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-12-02 11:59:22 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1406a572, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3683aac4, org.springframework.security.web.context.SecurityContextHolderFilter@48d3ec5d, org.springframework.security.web.header.HeaderWriterFilter@45659a08, org.springframework.web.filter.CorsFilter@50a489a2, org.springframework.security.web.csrf.CsrfFilter@54f79e1f, org.springframework.security.web.authentication.logout.LogoutFilter@65b49cac, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76331152, org.springframework.security.web.session.ConcurrentSessionFilter@423ddc02, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@210f9a95, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e232db5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e73ab65, org.springframework.security.web.session.SessionManagementFilter@2a52b831, org.springframework.security.web.access.ExceptionTranslationFilter@39867c44, org.springframework.security.web.access.intercept.AuthorizationFilter@5d6764c2]
+2024-12-02 11:59:22 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-02 11:59:22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-02 11:59:22 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 1.016 seconds (process running for 1298.78)
+2024-12-02 11:59:22 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-02 12:00:13 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-02 12:00:13 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 15428 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-02 12:00:13 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-02 12:00:13 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-02 12:00:13 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+2024-12-02 12:00:13 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-02 12:00:13 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-3.2.3.jar:3.2.3]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:183) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:428) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.3.jar:3.2.3]
+	at com.example.demo.ToDoListApplication.main(ToDoListApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.3.jar:3.2.3]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.demo.config.SecurityConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@46abdda3]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.4.jar:6.1.4]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:360) ~[spring-core-6.1.4.jar:6.1.4]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:417) ~[spring-core-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$1(AbstractAutowireCapableBeanFactory.java:750) ~[spring-beans-6.1.4.jar:6.1.4]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:749) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:682) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:653) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1644) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:562) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:534) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:247) ~[spring-boot-autoconfigure-3.2.3.jar:3.2.3]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:240) ~[spring-boot-autoconfigure-3.2.3.jar:3.2.3]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:230) ~[spring-boot-autoconfigure-3.2.3.jar:3.2.3]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:183) ~[spring-boot-autoconfigure-3.2.3.jar:3.2.3]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:158) ~[spring-boot-autoconfigure-3.2.3.jar:3.2.3]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-3.2.3.jar:3.2.3]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: UserDetailsService
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.4.jar:6.1.4]
+	... 36 common frames omitted
+Caused by: java.lang.ClassNotFoundException: UserDetailsService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.3.jar:3.2.3]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 40 common frames omitted
+2024-12-02 12:14:35 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 12832 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-02 12:14:35 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-02 12:14:35 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-02 12:14:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-02 12:14:35 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-02 12:14:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-02 12:14:36 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-02 12:14:36 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-02 12:14:36 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-02 12:14:36 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1409 ms
+2024-12-02 12:14:36 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'passwordEncoder': Error creating bean with name 'securityConfig': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-12-02 12:14:36 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-02 12:14:36 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-02 12:14:37 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  securityConfig (field private com.example.demo.service.UserService com.example.demo.config.SecurityConfig.userService)
+↑     ↓
+|  userService (field private org.springframework.security.crypto.password.PasswordEncoder com.example.demo.service.UserService.passwordEncoder)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-12-02 12:15:34 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 9764 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-02 12:15:34 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-02 12:15:34 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-02 12:15:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-02 12:15:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-02 12:15:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-02 12:15:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-02 12:15:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-02 12:15:35 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-02 12:15:35 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1382 ms
+2024-12-02 12:15:35 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4564210f-7603-4e7b-a6d3-ead7ba68ab91
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-12-02 12:15:36 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@35b50fae, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@515b3f50, org.springframework.security.web.context.SecurityContextHolderFilter@3196649d, org.springframework.security.web.header.HeaderWriterFilter@434cf858, org.springframework.web.filter.CorsFilter@a446474, org.springframework.security.web.csrf.CsrfFilter@5779370a, org.springframework.security.web.authentication.logout.LogoutFilter@3a404004, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15e1d3be, org.springframework.security.web.session.ConcurrentSessionFilter@7c3317ff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dd8ee23, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f25a213, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@368515c8, org.springframework.security.web.session.SessionManagementFilter@44a0f05d, org.springframework.security.web.access.ExceptionTranslationFilter@3196af8b, org.springframework.security.web.access.intercept.AuthorizationFilter@6bfb8ec0]
+2024-12-02 12:15:36 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-02 12:15:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-02 12:15:36 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 2.859 seconds (process running for 3.743)
+2024-12-02 12:16:25 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-02 12:16:25 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-02 12:16:25 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-02 12:31:33 [RMI TCP Connection(27)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-12-02 13:20:44 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 19616 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-02 13:20:44 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-02 13:20:44 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-02 13:20:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-02 13:20:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-02 13:20:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-02 13:20:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-02 13:20:45 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-02 13:20:45 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-02 13:20:45 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1579 ms
+2024-12-02 13:20:45 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'passwordEncoder': Error creating bean with name 'securityConfig': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-12-02 13:20:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-02 13:20:45 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-02 13:20:46 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  securityConfig (field private com.example.demo.service.UserService com.example.demo.config.SecurityConfig.userService)
+↑     ↓
+|  userService (field private org.springframework.security.crypto.password.PasswordEncoder com.example.demo.service.UserService.passwordEncoder)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+

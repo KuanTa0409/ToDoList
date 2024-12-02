@@ -1,10 +1,14 @@
 package com.example.demo.repository.DaoImpl;
 
+import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import com.example.demo.entity.User;
@@ -29,7 +33,14 @@ public class UserDaoImpl implements UserDao {
 	@Override
 	public void save(User user) {
 		String sql = "INSERT INTO user(username, password) VALUES (?, ?)";
-		jdbcTemplate.update(sql, user.getUsername(), user.getPassword());
+		KeyHolder keyHolder = new GeneratedKeyHolder();
+	    jdbcTemplate.update(connection -> {
+	        PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+	        ps.setString(1, user.getUsername());
+	        ps.setString(2, user.getPassword());
+	        return ps;
+	    }, keyHolder);
+	    user.setId(keyHolder.getKey().longValue());
 	}
 
 	@Override

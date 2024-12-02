@@ -11,11 +11,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.demo.entity.User;
 import com.example.demo.service.UserService;
-
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
@@ -50,6 +48,7 @@ public class AuthController { // http://localhost:8081/TODO/auth/login
 		if (result.hasErrors()) { // 有驗證錯誤，返回註冊頁面
 			return "auth/register";
 		}
+		
 		if (!user.getPassword().equals(confirm)) {
 			result.rejectValue("password", "error.user", "密碼不相符");
 			return "auth/register";
@@ -72,25 +71,6 @@ public class AuthController { // http://localhost:8081/TODO/auth/login
 			result.rejectValue("username", "error.user", e.getMessage());
 			log.warn("用戶註冊失敗: {}, 原因: {}", user.getUsername(), e.getMessage());
 			return "auth/register";
-		}
-	}
-
-	// 登入
-	@PostMapping("/login")
-	public String login(@RequestParam String username, @RequestParam String password,
-			RedirectAttributes redirectAttributes) {
-		log.info("用戶登入: {}", username);
-
-		try {
-			// 檢查用戶名和密碼
-			userService.pass(username, password);
-			log.info("用戶登入成功: {}", username);
-			return "redirect:/user/index";
-
-		} catch (RuntimeException e) {
-			log.warn("用戶登入失敗: {}, 原因: {}", username, e.getMessage());
-			redirectAttributes.addFlashAttribute("error", e.getMessage());
-			return "redirect:/auth/login?error=true";
 		}
 	}
 

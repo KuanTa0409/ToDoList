@@ -1,18 +1,22 @@
 package com.example.demo.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+
+import com.example.demo.entity.User;
+import com.example.demo.service.UserService;
 
 @Configuration      // Spring配置類
 @EnableWebSecurity  // 啟用Spring Security的Web安全功能
 public class SecurityConfig {
-    
+	
     @Bean   // 讓Spring進行管理
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
@@ -40,7 +44,7 @@ public class SecurityConfig {
             // 登出配置
             .logout(logout -> logout
                 // 設定登出的請求路徑
-                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                .logoutUrl("/logout")
                 .logoutSuccessUrl("/auth/login?logout=true") // 登出成功後 跳轉的頁面
                 .clearAuthentication(true)   // 登出時 清除認證信息
                 .invalidateHttpSession(true) // session失效
@@ -51,10 +55,22 @@ public class SecurityConfig {
             // Session管理配置(防止同時多處登入)
             .sessionManagement(session -> session
                 .maximumSessions(1) //限制同一用戶只能有一個活動session
-                .expiredUrl("/login?expired=true") // session過期後的重定向url
+                .expiredUrl("/auth/login?expired=true") // session過期後的重定向url
             );
             
         return http.build();
+    }
+    
+    @Bean
+    public UserDetailsService userDetailsService(UserService userService) {
+        return username -> {
+            User user = userService.getUserByUsername(username);
+            return org.springframework.security.core.userdetails.User
+                    .withUsername(user.getUsername())
+                    .password(user.getPassword())
+                    .authorities("USER")
+                    .build();
+        };
     }
     
     /**
