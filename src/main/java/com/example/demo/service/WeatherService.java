@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -23,7 +24,7 @@ public class WeatherService {
 	 * 中央氣象署開放資料平臺之資料擷取API
 	 * https://opendata.cwa.gov.tw/dist/opendata-swagger.html
 	 */
-	private static final String WEATHER_API_URL = "https://opendata.cwa.gov.tw/dist/opendata-swagger.html";
+	private static final String WEATHER_API_URL = "https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001";
 	private final RestTemplate restTemplate;
 	private final String authKey; // 從配置文件讀取API金鑰
 	private static final Logger log = LoggerFactory.getLogger(UserService.class);
@@ -35,12 +36,17 @@ public class WeatherService {
     }
 	
 	public List<Weather> getWeatherInfo() {
-        String url = WEATHER_API_URL + "?Authorization=" + authKey;
         try {
+        	String url = WEATHER_API_URL + "?Authorization=" + authKey;
             ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
             // 解析JSON回應並轉換為Weather對象列表
             // 這裡需要根據實際API回應格式來調整解析邏輯
-            return parseWeatherData(response.getBody());
+            if (response.getStatusCode() == HttpStatus.OK) {
+                return parseWeatherData(response.getBody());
+            } else {
+                log.error("API請求失敗: {}", response.getStatusCode());
+                return Collections.emptyList();
+            }
         } catch (Exception e) {
             log.error("獲取天氣資訊失敗", e.getMessage());
             return Collections.emptyList();

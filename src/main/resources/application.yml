@@ -21,6 +21,7 @@ spring:
   
   # Spring MVC 配置
   mvc:
+    static-path-pattern: /**
     hiddenmethod:
       filter:
         enabled: true
@@ -31,7 +32,8 @@ spring:
   
   web:
     resources:
-      add-mappings: false
+      add-mappings: true
+      static-locations: classpath:/static/
 
 # 服務器配置
 server:

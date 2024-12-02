@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
+import java.util.Optional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +35,15 @@ public class UserDetailService {
 	@Transactional
 	public void updateUserDetail(UserDetail userDetail) {
 		log.info("Update user detail for uid: {}", userDetail.getUid());
-		userDetailDao.save(userDetail);
+		
+		// 檢查用戶資料是否存在
+        Optional<UserDetail> existDetail = userDetailDao.findById(userDetail.getUid());
+        if (existDetail.isPresent()) {
+            userDetailDao.update(userDetail); // 存在 > 更新
+        } else {
+            userDetailDao.save(userDetail); // 不存在 > 保存
+        }
+		
 		log.info("updated successfully!: {}", userDetail.getUid());
 	}
 }

@@ -64,12 +64,20 @@ public class TodoController {
 		if(result.hasErrors()) {
 			return "todo/todo";
 		}
-		List<Todo> todos = todoService.getUserTodos(principal.getName());
-		todos.add(todo);
-		// 將 todo 物件資料傳遞給 /addOK，再傳給 success.html 顯示, 可以防止二次 submit
-		attr.addFlashAttribute("todo", todo); // 按 重新整理，也不會二次輸入
-		attr.addFlashAttribute("message","新增成功");
-		return "redirect:addOK"; 
+		try {
+			todo.setTusername(principal.getName());
+			todo.setCreatedAt(LocalDateTime.now());
+	        todo.setUpdatedAt(LocalDateTime.now());
+	        todo.setCompleted(false);
+	        todoService.addTodo(todo);
+	        // 將 todo 物件資料傳遞給 /addOK，再傳給 success.html 顯示, 可以防止二次 submit
+			attr.addFlashAttribute("todo", todo); // 按 重新整理，也不會二次輸入
+			attr.addFlashAttribute("message","新增成功");
+			return "redirect:/todos/"; 
+		} catch (Exception e) {
+			attr.addFlashAttribute("message", "新增失敗：" + e.getMessage());
+	        return "redirect:/todos/";
+		}
 	}
 	
 	// 修改

@@ -32,9 +32,6 @@ public class TodoService {
 		if(todo.getDescription() == null || todo.getDescription().trim().isEmpty()) {
 			throw new RuntimeException("待辦事項，敘述不能為空");
 		}
-		todo.setCreatedAt(LocalDateTime.now());
-		todo.setUpdatedAt(LocalDateTime.now());
-		todo.setCompleted(false);  // 確保completed的初始值為false
         todoDao.save(todo);
         log.info("Created successfully! user: {}", todo.getTusername());
 	}

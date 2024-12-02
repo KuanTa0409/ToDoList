@@ -48,6 +48,7 @@ public class UserController {
 		log.debug("顯示用戶主頁: {}", username);
 		
 		User user = userService.getUserByUsername(username);
+		model.addAttribute("user", user);
 		UserDetail userDetail = userDetailService.getUserDetail(user.getId());
 		model.addAttribute("userDetail", userDetail);
 		

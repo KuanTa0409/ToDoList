@@ -76,9 +76,20 @@ public class UserDetailDaoImpl implements UserDetailDao {
 			throw new RuntimeException("Error converting interests to JSON", e);
 		}
 
-		jdbcTemplate.update(sql, userDetail.getName(), userDetail.getAge(), userDetail.getBirth(),
-				userDetail.getGender(), userDetail.getEducation(), interestJson, userDetail.getResume(),
-				userDetail.getUid());
+		int result = jdbcTemplate.update(sql, 
+	            userDetail.getName(),
+	            userDetail.getAge(),
+	            userDetail.getBirth(),
+	            userDetail.getGender(),
+	            userDetail.getEducation(),
+	            interestJson,
+	            userDetail.getResume(),
+	            userDetail.getUid()
+	        );
+	        
+	        if (result == 0) {
+	            throw new RuntimeException("更新失敗：找不到對應的用戶資料");
+	        }
 	}
 
 	@Override
