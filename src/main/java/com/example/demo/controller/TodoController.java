@@ -4,6 +4,8 @@ import java.security.Principal;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +23,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.example.demo.entity.Todo;
 import com.example.demo.service.TodoService;
 
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
 @Controller
@@ -30,12 +33,19 @@ public class TodoController {
 	@Autowired
 	private TodoService todoService;
 	
+	private static final Logger logger = LoggerFactory.getLogger(TodoController.class);
+	
 	// 首頁(查詢該用戶 所有待辦事項)
 	@GetMapping("/")
-	public String index(Model model,Principal principal) {
+	public String showList(Model model,Principal principal, HttpSession session) {
+		String username = (String)session.getAttribute("username");
+		if(username == null) {
+			return "redirect:/error";
+		}
+		
 		List<Todo> todos = todoService.getUserTodos(principal.getName());
 		model.addAttribute("todos", todos);
-		return "todo/todo";
+		return "todo/list";
 	}
 	
 	// 查詢單一待辦事項
@@ -62,21 +72,21 @@ public class TodoController {
 	public String add(@Valid @ModelAttribute Todo todo, BindingResult result,
 					  RedirectAttributes attr, Principal principal) {
 		if(result.hasErrors()) {
-			return "todo/todo";
+			return "todo/list";
 		}
 		try {
+			
 			todo.setTusername(principal.getName());
 			todo.setCreatedAt(LocalDateTime.now());
 	        todo.setUpdatedAt(LocalDateTime.now());
 	        todo.setCompleted(false);
 	        todoService.addTodo(todo);
-	        // 將 todo 物件資料傳遞給 /addOK，再傳給 success.html 顯示, 可以防止二次 submit
-			attr.addFlashAttribute("todo", todo); // 按 重新整理，也不會二次輸入
+	        
 			attr.addFlashAttribute("message","新增成功");
-			return "redirect:/todos/"; 
+			return "list";
 		} catch (Exception e) {
 			attr.addFlashAttribute("message", "新增失敗：" + e.getMessage());
-	        return "redirect:/todos/";
+	        return "redirect:error";
 		}
 	}
 	

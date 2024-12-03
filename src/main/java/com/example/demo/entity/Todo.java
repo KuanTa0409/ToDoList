@@ -9,7 +9,6 @@ public class Todo {
 
 	private Long tid;
 	
-	// 同一個用戶可以建立多個待辦事項
 	private String tusername;
 	
 	private String description;

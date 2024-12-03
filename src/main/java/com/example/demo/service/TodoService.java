@@ -28,12 +28,12 @@ public class TodoService {
 
 	@Transactional
 	public void addTodo(Todo todo) {
-		log.info("Create new todo for user: {}", todo.getTusername());
+		log.info("Saving todo: {}", todo);
 		if(todo.getDescription() == null || todo.getDescription().trim().isEmpty()) {
 			throw new RuntimeException("待辦事項，敘述不能為空");
 		}
         todoDao.save(todo);
-        log.info("Created successfully! user: {}", todo.getTusername());
+        log.info("Saved successfully! user: {}", todo.getTusername());
 	}
 	
 	// 獲取用戶 所有的待辦事項
