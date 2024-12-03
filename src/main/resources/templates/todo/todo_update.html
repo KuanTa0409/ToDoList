@@ -13,7 +13,7 @@
                     <div class="card-body">
                         <h3 class="card-title text-center mb-4">編輯待辦事項</h3>
                         <form th:action="@{/todos/{id}(id=${todo.tid})}" th:object="${todo}" method="post">
-                            <input type="hidden" name="_method" value="PUT">
+                            <input type="hidden" name="_method" value="PUT"/>
                             <div class="mb-3">
                                 <label class="form-label">描述：</label>
                                 <textarea th:field="*{description}" class="form-control" required></textarea>

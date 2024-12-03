@@ -146,3 +146,681 @@
 2024-12-03 14:44:20 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 0.972 seconds (process running for 2152.751)
 2024-12-03 14:44:20 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
 2024-12-03 14:44:27 [RMI TCP Connection(63)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-12-03 14:50:50 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 20388 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-03 14:50:50 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-03 14:50:50 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-03 14:50:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-03 14:50:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-03 14:50:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-03 14:50:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 14:50:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-03 14:50:51 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-03 14:50:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1508 ms
+2024-12-03 14:50:52 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4acbd16, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ce366f3, org.springframework.security.web.context.SecurityContextHolderFilter@18c345f9, org.springframework.security.web.header.HeaderWriterFilter@2e2277e1, org.springframework.web.filter.CorsFilter@2d363a7b, org.springframework.security.web.csrf.CsrfFilter@305f81b7, org.springframework.security.web.authentication.logout.LogoutFilter@54974b12, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@75bc09b2, org.springframework.security.web.session.ConcurrentSessionFilter@649d41b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d507923, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7455d762, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a11283e, org.springframework.security.web.session.SessionManagementFilter@185ca2ec, org.springframework.security.web.access.ExceptionTranslationFilter@6070302f, org.springframework.security.web.access.intercept.AuthorizationFilter@6c3cd03e]
+2024-12-03 14:50:52 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-03 14:50:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-03 14:50:52 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 2.894 seconds (process running for 3.894)
+2024-12-03 14:51:17 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 14:51:17 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 14:51:17 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-03 14:52:49 [http-nio-8081-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-03 14:52:50 [http-nio-8081-exec-8] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40caca92
+2024-12-03 14:52:50 [http-nio-8081-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-03 14:52:50 [http-nio-8081-exec-10] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 14:52:50 [http-nio-8081-exec-10] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 14:52:58 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: Test5
+2024-12-03 14:53:02 [http-nio-8081-exec-2] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 14:53:02 [http-nio-8081-exec-2] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 14:53:08 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: Test5
+2024-12-03 14:53:41 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-03 14:53:41 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-03 14:53:41 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-03 14:53:41 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 20388 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-03 14:53:41 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-03 14:53:41 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-03 14:53:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-03 14:53:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 14:53:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-03 14:53:41 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-03 14:53:41 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 290 ms
+2024-12-03 14:53:42 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58ad377, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d5f139c, org.springframework.security.web.context.SecurityContextHolderFilter@715b8038, org.springframework.security.web.header.HeaderWriterFilter@55cd0146, org.springframework.web.filter.CorsFilter@7ee1c612, org.springframework.security.web.csrf.CsrfFilter@5b7c25e2, org.springframework.security.web.authentication.logout.LogoutFilter@1004ddab, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33d5b923, org.springframework.security.web.session.ConcurrentSessionFilter@4634bcf0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c216864, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ec32469, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6063744c, org.springframework.security.web.session.SessionManagementFilter@7cddd5bc, org.springframework.security.web.access.ExceptionTranslationFilter@683bec72, org.springframework.security.web.access.intercept.AuthorizationFilter@10067366]
+2024-12-03 14:53:42 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-03 14:53:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-03 14:53:42 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 0.599 seconds (process running for 173.48)
+2024-12-03 14:53:42 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-03 14:53:46 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 14:53:46 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 14:53:46 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-03 14:53:46 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: Test5
+2024-12-03 14:53:46 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-12-03 14:53:46 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32b3c60
+2024-12-03 14:53:46 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-12-03 14:53:51 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.UserController - 編輯個人基本資料: Test5
+2024-12-03 14:53:54 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: Test5
+2024-12-03 14:53:56 [http-nio-8081-exec-6] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 14:53:56 [http-nio-8081-exec-6] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 14:53:58 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: Test5
+2024-12-03 14:54:13 [http-nio-8081-exec-1] ERROR o.s.s.w.a.UsernamePasswordAuthenticationFilter - An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: 用戶不存在!
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:118) ~[spring-security-core-6.2.2.jar:6.2.2]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-6.2.2.jar:6.2.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-6.2.2.jar:6.2.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201) ~[spring-security-core-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:131) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.lang.RuntimeException: 用戶不存在!
+	at com.example.demo.service.UserService.lambda$1(UserService.java:57) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.example.demo.service.UserService.getUserByUsername(UserService.java:57) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:713) ~[spring-aop-6.1.4.jar:6.1.4]
+	at com.example.demo.service.UserService$$SpringCGLIB$$0.getUserByUsername(<generated>) ~[classes/:na]
+	at com.example.demo.config.SecurityConfig.lambda$4(SecurityConfig.java:67) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:103) ~[spring-security-core-6.2.2.jar:6.2.2]
+	... 72 common frames omitted
+2024-12-03 14:54:25 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: Test5
+2024-12-03 14:54:50 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 14:54:50 [http-nio-8081-exec-7] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 14:55:39 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: Test5
+2024-12-03 14:57:20 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-03 14:57:20 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-12-03 14:57:20 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-12-03 14:57:20 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 20388 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-03 14:57:20 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-03 14:57:20 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-03 14:57:20 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-03 14:57:20 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 14:57:20 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-03 14:57:20 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-03 14:57:20 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 298 ms
+2024-12-03 14:57:21 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bba6501, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1992bcba, org.springframework.security.web.context.SecurityContextHolderFilter@96d703, org.springframework.security.web.header.HeaderWriterFilter@8c7fe78, org.springframework.web.filter.CorsFilter@3585e69e, org.springframework.security.web.csrf.CsrfFilter@6e45225b, org.springframework.security.web.authentication.logout.LogoutFilter@434d1267, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30cf8755, org.springframework.security.web.session.ConcurrentSessionFilter@380f773d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3795dd57, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3620d277, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79bc3a54, org.springframework.security.web.session.SessionManagementFilter@7f9fc56f, org.springframework.security.web.access.ExceptionTranslationFilter@3ed0ce39, org.springframework.security.web.access.intercept.AuthorizationFilter@6a28c274]
+2024-12-03 14:57:21 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-03 14:57:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-03 14:57:21 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 0.542 seconds (process running for 392.398)
+2024-12-03 14:57:21 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-03 14:57:26 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 14:57:26 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 14:57:26 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-03 14:57:26 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: Test5
+2024-12-03 14:57:28 [http-nio-8081-exec-2] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 14:57:28 [http-nio-8081-exec-2] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 14:57:28 [http-nio-8081-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-12-03 14:57:28 [http-nio-8081-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@666d2dba
+2024-12-03 14:57:28 [http-nio-8081-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-12-03 14:57:33 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: Test5
+2024-12-03 14:59:10 [http-nio-8081-exec-6] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 14:59:10 [http-nio-8081-exec-6] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 14:59:18 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: Test5
+2024-12-03 14:59:23 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 14:59:23 [http-nio-8081-exec-8] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:01:36 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-03 15:01:36 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-12-03 15:01:36 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-12-03 15:01:36 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 20388 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-03 15:01:36 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-03 15:01:36 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-03 15:01:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-03 15:01:36 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 15:01:36 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-03 15:01:36 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-03 15:01:36 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 460 ms
+2024-12-03 15:01:37 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@403e8534, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1337eca5, org.springframework.security.web.context.SecurityContextHolderFilter@7c2f1f9c, org.springframework.security.web.header.HeaderWriterFilter@2523a98f, org.springframework.web.filter.CorsFilter@311a13b2, org.springframework.security.web.csrf.CsrfFilter@6f4a6e9a, org.springframework.security.web.authentication.logout.LogoutFilter@684c4275, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a6b39e6, org.springframework.security.web.session.ConcurrentSessionFilter@742c69b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44f8ae47, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b6decaa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22adb87e, org.springframework.security.web.session.SessionManagementFilter@48aee082, org.springframework.security.web.access.ExceptionTranslationFilter@5d1ab49, org.springframework.security.web.access.intercept.AuthorizationFilter@7d5bea83]
+2024-12-03 15:01:37 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-03 15:01:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-03 15:01:37 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 0.89 seconds (process running for 648.63)
+2024-12-03 15:01:37 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-03 15:01:39 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 15:01:39 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 15:01:39 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-03 15:01:39 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: Test5
+2024-12-03 15:01:39 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-12-03 15:01:39 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5056492b
+2024-12-03 15:01:39 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-12-03 15:01:45 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:01:45 [http-nio-8081-exec-3] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:01:50 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: Test5
+2024-12-03 15:01:50 [http-nio-8081-exec-4] INFO  c.example.demo.service.TodoService - Saving todo: Todo [tid=null, tusername=Test5, description=我要去運動, completed=false, createdAt=2024-12-03T15:01:50.834804800, updatedAt=2024-12-03T15:01:50.834804800, user=null]
+2024-12-03 15:03:30 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-03 15:03:30 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2024-12-03 15:03:30 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2024-12-03 15:03:30 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 20388 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-03 15:03:30 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-03 15:03:30 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-03 15:03:31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-03 15:03:31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 15:03:31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-03 15:03:31 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-03 15:03:31 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 276 ms
+2024-12-03 15:03:31 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ff79ecd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58c62592, org.springframework.security.web.context.SecurityContextHolderFilter@6bee0cc, org.springframework.security.web.header.HeaderWriterFilter@471bb763, org.springframework.web.filter.CorsFilter@3f604e0f, org.springframework.security.web.csrf.CsrfFilter@4183aeca, org.springframework.security.web.authentication.logout.LogoutFilter@798590fb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6aa0d92a, org.springframework.security.web.session.ConcurrentSessionFilter@70884939, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c04efd7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3abffe41, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5365b940, org.springframework.security.web.session.SessionManagementFilter@2ca14799, org.springframework.security.web.access.ExceptionTranslationFilter@11bcef93, org.springframework.security.web.access.intercept.AuthorizationFilter@74c01a4]
+2024-12-03 15:03:31 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-03 15:03:31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-03 15:03:31 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 0.522 seconds (process running for 762.608)
+2024-12-03 15:03:31 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-03 15:03:38 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 15:03:38 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 15:03:38 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-12-03 15:03:38 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:03:38 [http-nio-8081-exec-1] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:03:38 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2024-12-03 15:03:38 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a3e0b0c
+2024-12-03 15:03:38 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2024-12-03 15:03:42 [http-nio-8081-exec-2] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: Test5
+2024-12-03 15:03:42 [http-nio-8081-exec-2] INFO  c.example.demo.service.TodoService - Saving todo: Todo [tid=null, tusername=Test5, description=去圖書館做報告, completed=false, createdAt=2024-12-03T15:03:42.642886600, updatedAt=2024-12-03T15:03:42.642886600, user=null]
+2024-12-03 15:03:42 [http-nio-8081-exec-2] INFO  c.example.demo.service.TodoService - Saved successfully! user: Test5
+2024-12-03 15:03:42 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:03:42 [http-nio-8081-exec-3] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:03:47 [http-nio-8081-exec-4] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:03:47 [http-nio-8081-exec-4] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:03:47 [http-nio-8081-exec-5] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:03:47 [http-nio-8081-exec-5] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:03:48 [http-nio-8081-exec-6] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:03:48 [http-nio-8081-exec-6] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:03:48 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:03:48 [http-nio-8081-exec-7] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:03:49 [http-nio-8081-exec-8] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:03:49 [http-nio-8081-exec-8] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:03:49 [http-nio-8081-exec-9] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:03:49 [http-nio-8081-exec-9] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:03:50 [http-nio-8081-exec-10] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:03:50 [http-nio-8081-exec-10] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:03:50 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:03:50 [http-nio-8081-exec-1] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:03:50 [http-nio-8081-exec-2] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:03:50 [http-nio-8081-exec-2] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:03:50 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:03:50 [http-nio-8081-exec-3] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:03:51 [http-nio-8081-exec-4] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:03:51 [http-nio-8081-exec-4] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:03:51 [http-nio-8081-exec-5] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:03:51 [http-nio-8081-exec-5] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:04:02 [http-nio-8081-exec-9] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:04:02 [http-nio-8081-exec-9] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:04:20 [http-nio-8081-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.controller.TodoController.delete(com.example.demo.entity.Todo,org.springframework.web.servlet.mvc.support.RedirectAttributes,int,java.security.Principal): [Field error in object 'todo' on field 'user': rejected value [null]; codes [NotNull.todo.user,NotNull.user,NotNull.com.example.demo.entity.User,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [todo.user,user]; arguments []; default message [user]]; default message [用戶不能為空]] ]
+2024-12-03 15:04:22 [http-nio-8081-exec-2] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:04:22 [http-nio-8081-exec-2] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:04:31 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:04:31 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:07:46 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-03 15:07:46 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2024-12-03 15:07:46 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2024-12-03 15:07:46 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 20388 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-03 15:07:46 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-03 15:07:46 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-03 15:07:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-03 15:07:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 15:07:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-03 15:07:47 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-03 15:07:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 235 ms
+2024-12-03 15:07:47 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a67d607, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f62afcd, org.springframework.security.web.context.SecurityContextHolderFilter@24e0c045, org.springframework.security.web.header.HeaderWriterFilter@37c32308, org.springframework.web.filter.CorsFilter@244d9958, org.springframework.security.web.csrf.CsrfFilter@6698854, org.springframework.security.web.authentication.logout.LogoutFilter@6ac0db3a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7692cae4, org.springframework.security.web.session.ConcurrentSessionFilter@6771ac2a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a956cb2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@227a201e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4468a2df, org.springframework.security.web.session.SessionManagementFilter@2d10aaf4, org.springframework.security.web.access.ExceptionTranslationFilter@7e07aab3, org.springframework.security.web.access.intercept.AuthorizationFilter@38986990]
+2024-12-03 15:07:47 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-03 15:07:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-03 15:07:47 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 0.46 seconds (process running for 1018.519)
+2024-12-03 15:07:47 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-03 15:07:49 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 15:07:49 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 15:07:49 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-03 15:07:49 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-12-03 15:07:49 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@279b7723
+2024-12-03 15:07:49 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-12-03 15:07:52 [http-nio-8081-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.controller.TodoController.delete(com.example.demo.entity.Todo,org.springframework.web.servlet.mvc.support.RedirectAttributes,int,java.security.Principal): [Field error in object 'todo' on field 'user': rejected value [null]; codes [NotNull.todo.user,NotNull.user,NotNull.com.example.demo.entity.User,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [todo.user,user]; arguments []; default message [user]]; default message [用戶不能為空]] ]
+2024-12-03 15:07:56 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:07:56 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:07:57 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:07:57 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:07:57 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:07:57 [http-nio-8081-exec-3] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:07:58 [http-nio-8081-exec-6] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:07:58 [http-nio-8081-exec-6] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:07:58 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:07:58 [http-nio-8081-exec-8] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:07:59 [http-nio-8081-exec-7] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:07:59 [http-nio-8081-exec-7] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:07:59 [http-nio-8081-exec-10] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:07:59 [http-nio-8081-exec-10] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:08:00 [http-nio-8081-exec-9] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:08:00 [http-nio-8081-exec-9] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:08:00 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:08:00 [http-nio-8081-exec-1] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:08:02 [http-nio-8081-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.controller.TodoController.delete(com.example.demo.entity.Todo,org.springframework.web.servlet.mvc.support.RedirectAttributes,int,java.security.Principal): [Field error in object 'todo' on field 'user': rejected value [null]; codes [NotNull.todo.user,NotNull.user,NotNull.com.example.demo.entity.User,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [todo.user,user]; arguments []; default message [user]]; default message [用戶不能為空]] ]
+2024-12-03 15:08:04 [http-nio-8081-exec-5] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:08:04 [http-nio-8081-exec-5] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:08:24 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:08:24 [http-nio-8081-exec-7] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:09:28 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:09:28 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:09:28 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-03 15:09:28 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-12-03 15:09:28 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-12-03 15:09:28 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 20388 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-03 15:09:28 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-03 15:09:28 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-03 15:09:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-03 15:09:28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 15:09:28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-03 15:09:28 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-03 15:09:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 258 ms
+2024-12-03 15:09:28 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5020c0e7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5469790a, org.springframework.security.web.context.SecurityContextHolderFilter@59c91a4b, org.springframework.security.web.header.HeaderWriterFilter@6de3d25, org.springframework.web.filter.CorsFilter@2a4cb852, org.springframework.security.web.csrf.CsrfFilter@5d393da5, org.springframework.security.web.authentication.logout.LogoutFilter@2d8df347, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12751e25, org.springframework.security.web.session.ConcurrentSessionFilter@451b75a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e893342, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@222f6247, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10720f08, org.springframework.security.web.session.SessionManagementFilter@51dbae2a, org.springframework.security.web.access.ExceptionTranslationFilter@3185b970, org.springframework.security.web.access.intercept.AuthorizationFilter@139da8d5]
+2024-12-03 15:09:28 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-03 15:09:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-03 15:09:28 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 0.486 seconds (process running for 1120.094)
+2024-12-03 15:09:28 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-03 15:09:30 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 15:09:30 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 15:09:30 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-03 15:09:30 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2024-12-03 15:09:30 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@752c15d2
+2024-12-03 15:09:30 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2024-12-03 15:09:35 [http-nio-8081-exec-2] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:09:35 [http-nio-8081-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/TODO] threw exception [Request processing failed: java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 1] with root cause
+java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100) ~[na:na]
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106) ~[na:na]
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302) ~[na:na]
+	at java.base/java.util.Objects.checkIndex(Objects.java:385) ~[na:na]
+	at java.base/java.util.ArrayList.set(ArrayList.java:470) ~[na:na]
+	at com.example.demo.controller.TodoController.update(TodoController.java:99) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:151) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:129) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:131) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+2024-12-03 15:09:59 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:09:59 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:10:32 [http-nio-8081-exec-6] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:10:32 [http-nio-8081-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/TODO] threw exception [Request processing failed: java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 1] with root cause
+java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100) ~[na:na]
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106) ~[na:na]
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302) ~[na:na]
+	at java.base/java.util.Objects.checkIndex(Objects.java:385) ~[na:na]
+	at java.base/java.util.ArrayList.set(ArrayList.java:470) ~[na:na]
+	at com.example.demo.controller.TodoController.update(TodoController.java:99) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:151) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.ConcurrentSessionFilter.doFilter(ConcurrentSessionFilter.java:129) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:131) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+2024-12-03 15:28:10 [HikariPool-7 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=13m39s854ms522µs800ns).
+2024-12-03 15:29:45 [RMI TCP Connection(59)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-12-03 15:29:46 [RMI TCP Connection(59)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2024-12-03 15:29:46 [RMI TCP Connection(59)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2024-12-03 15:39:59 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 14832 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-03 15:39:59 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-03 15:39:59 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-03 15:39:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-03 15:39:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-03 15:40:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-03 15:40:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 15:40:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-03 15:40:00 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-03 15:40:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1363 ms
+2024-12-03 15:40:01 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d1fc48d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10137603, org.springframework.security.web.context.SecurityContextHolderFilter@61494e81, org.springframework.security.web.header.HeaderWriterFilter@18d028ae, org.springframework.web.filter.CorsFilter@2439a868, org.springframework.security.web.csrf.CsrfFilter@3b0db068, org.springframework.security.web.authentication.logout.LogoutFilter@5c11ba1d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68cb9aab, org.springframework.security.web.session.ConcurrentSessionFilter@2bd0a4c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@617e6f6b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35b5a1a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bda9a91, org.springframework.security.web.session.SessionManagementFilter@6bfb8ec0, org.springframework.security.web.access.ExceptionTranslationFilter@4d336178, org.springframework.security.web.access.intercept.AuthorizationFilter@33c5da8f]
+2024-12-03 15:40:01 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-03 15:40:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-03 15:40:01 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 2.855 seconds (process running for 3.742)
+2024-12-03 15:40:06 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 15:40:06 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 15:40:06 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-03 15:40:06 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:40:06 [http-nio-8081-exec-1] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:40:06 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-03 15:40:06 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1beff683
+2024-12-03 15:40:06 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-03 15:40:09 [http-nio-8081-exec-2] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: Test5
+2024-12-03 15:40:19 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:40:19 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:40:23 [http-nio-8081-exec-5] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: Test5
+2024-12-03 15:40:23 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Saving todo: Todo [tid=null, tusername=Test5, description=我要去運動, completed=false, createdAt=2024-12-03T15:40:23.438840100, updatedAt=2024-12-03T15:40:23.438840100, user=null]
+2024-12-03 15:40:23 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Saved successfully! user: Test5
+2024-12-03 15:40:23 [http-nio-8081-exec-6] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:40:23 [http-nio-8081-exec-6] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:40:29 [http-nio-8081-exec-10] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: Test5
+2024-12-03 15:40:29 [http-nio-8081-exec-10] INFO  c.example.demo.service.TodoService - Saving todo: Todo [tid=null, tusername=Test5, description=討論報告, completed=false, createdAt=2024-12-03T15:40:29.311782800, updatedAt=2024-12-03T15:40:29.311782800, user=null]
+2024-12-03 15:40:29 [http-nio-8081-exec-10] INFO  c.example.demo.service.TodoService - Saved successfully! user: Test5
+2024-12-03 15:40:29 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:40:29 [http-nio-8081-exec-8] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:40:38 [http-nio-8081-exec-9] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: Test5
+2024-12-03 15:40:38 [http-nio-8081-exec-9] INFO  c.example.demo.service.TodoService - Saving todo: Todo [tid=null, tusername=Test5, description=討論報告, completed=false, createdAt=2024-12-03T15:40:38.222185400, updatedAt=2024-12-03T15:40:38.222185400, user=null]
+2024-12-03 15:40:38 [http-nio-8081-exec-9] INFO  c.example.demo.service.TodoService - Saved successfully! user: Test5
+2024-12-03 15:40:38 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:40:38 [http-nio-8081-exec-7] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:40:49 [http-nio-8081-exec-1] INFO  c.example.demo.service.TodoService - Update todo for id: 4
+2024-12-03 15:40:49 [http-nio-8081-exec-1] INFO  c.example.demo.service.TodoService - Updated successfully!: 4
+2024-12-03 15:40:49 [http-nio-8081-exec-2] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:40:49 [http-nio-8081-exec-2] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:40:59 [http-nio-8081-exec-3] INFO  c.example.demo.service.TodoService - Update todo for id: 5
+2024-12-03 15:40:59 [http-nio-8081-exec-3] INFO  c.example.demo.service.TodoService - Updated successfully!: 5
+2024-12-03 15:40:59 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:40:59 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:41:00 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Update todo for id: 3
+2024-12-03 15:41:00 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Updated successfully!: 3
+2024-12-03 15:41:00 [http-nio-8081-exec-6] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:41:00 [http-nio-8081-exec-6] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:41:01 [http-nio-8081-exec-10] INFO  c.example.demo.service.TodoService - Update todo for id: 4
+2024-12-03 15:41:01 [http-nio-8081-exec-10] INFO  c.example.demo.service.TodoService - Updated successfully!: 4
+2024-12-03 15:41:01 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:41:01 [http-nio-8081-exec-8] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:41:25 [http-nio-8081-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2024-12-03 15:42:20 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 15:42:20 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 15:56:38 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m1s857ms923µs700ns).
+2024-12-03 16:02:57 [http-nio-8081-exec-10] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: Test5
+2024-12-03 16:03:00 [http-nio-8081-exec-9] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 16:03:00 [http-nio-8081-exec-9] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 16:03:19 [http-nio-8081-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2024-12-03 16:03:29 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 16:03:29 [http-nio-8081-exec-3] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 16:05:30 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-03 16:05:30 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-03 16:05:30 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-03 16:05:30 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 14832 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-03 16:05:30 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-03 16:05:30 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-03 16:05:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-03 16:05:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 16:05:30 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-03 16:05:30 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-03 16:05:30 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 384 ms
+2024-12-03 16:05:31 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76abdac9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38a0f72c, org.springframework.security.web.context.SecurityContextHolderFilter@40f22ce1, org.springframework.security.web.header.HeaderWriterFilter@2ffc075e, org.springframework.web.filter.CorsFilter@240e5013, org.springframework.security.web.csrf.CsrfFilter@66c6de79, org.springframework.security.web.authentication.logout.LogoutFilter@27f1264b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@58466cf4, org.springframework.security.web.session.ConcurrentSessionFilter@1985e015, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f7b0556, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40865c05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f44b9aa, org.springframework.security.web.session.SessionManagementFilter@49e0ca46, org.springframework.security.web.access.ExceptionTranslationFilter@43e349a5, org.springframework.security.web.access.intercept.AuthorizationFilter@263da39]
+2024-12-03 16:05:31 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-03 16:05:31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-03 16:05:31 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 0.717 seconds (process running for 1533.082)
+2024-12-03 16:05:31 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-03 16:05:40 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 16:05:40 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 16:05:40 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-03 16:05:40 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-12-03 16:05:40 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74f3723
+2024-12-03 16:05:40 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-12-03 16:05:44 [http-nio-8081-exec-2] INFO  c.example.demo.service.TodoService - Update todo for id: 6
+2024-12-03 16:05:44 [http-nio-8081-exec-2] INFO  c.example.demo.service.TodoService - Updated successfully!: 6
+2024-12-03 16:05:44 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 16:05:44 [http-nio-8081-exec-3] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 16:06:04 [http-nio-8081-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.controller.TodoController.delete(com.example.demo.entity.Todo,org.springframework.web.servlet.mvc.support.RedirectAttributes,int,java.security.Principal): [Field error in object 'todo' on field 'user': rejected value [null]; codes [NotNull.todo.user,NotNull.user,NotNull.com.example.demo.entity.User,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [todo.user,user]; arguments []; default message [user]]; default message [用戶不能為空]] ]
+2024-12-03 16:07:49 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 16:07:49 [http-nio-8081-exec-7] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 16:07:54 [http-nio-8081-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.controller.TodoController.delete(com.example.demo.entity.Todo,org.springframework.web.servlet.mvc.support.RedirectAttributes,int,java.security.Principal): [Field error in object 'todo' on field 'user': rejected value [null]; codes [NotNull.todo.user,NotNull.user,NotNull.com.example.demo.entity.User,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [todo.user,user]; arguments []; default message [user]]; default message [用戶不能為空]] ]
+2024-12-03 16:07:55 [http-nio-8081-exec-10] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 16:07:55 [http-nio-8081-exec-10] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 16:07:58 [http-nio-8081-exec-2] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: Test5
+2024-12-03 16:07:58 [http-nio-8081-exec-2] DEBUG c.example.demo.service.TodoService - User Todo list，user: Test5
+2024-12-03 16:08:01 [http-nio-8081-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.example.demo.controller.TodoController.delete(com.example.demo.entity.Todo,org.springframework.web.servlet.mvc.support.RedirectAttributes,int,java.security.Principal): [Field error in object 'todo' on field 'user': rejected value [null]; codes [NotNull.todo.user,NotNull.user,NotNull.com.example.demo.entity.User,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [todo.user,user]; arguments []; default message [user]]; default message [用戶不能為空]] ]
+2024-12-03 16:19:24 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=7m14s299ms712µs500ns).
+2024-12-03 16:20:55 [RMI TCP Connection(39)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-12-03 16:20:55 [RMI TCP Connection(39)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-12-03 16:20:55 [RMI TCP Connection(39)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.

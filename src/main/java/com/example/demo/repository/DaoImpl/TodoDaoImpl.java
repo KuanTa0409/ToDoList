@@ -36,7 +36,7 @@ public class TodoDaoImpl implements TodoDao {
 	
 	@Override
 	public void save(Todo todo) {
-		String sql = "INSERT INTO todo (tusername, description, completed, created_at, updated_at, user_id)) VALUES (?, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO todo (tusername, description, completed, created_at, updated_at, user_id) VALUES (?, ?, ?, ?, ?, ?)";
 		
 		jdbcTemplate.update(sql, 
 		        todo.getTusername(),

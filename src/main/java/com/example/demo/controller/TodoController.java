@@ -28,7 +28,7 @@ import jakarta.validation.Valid;
 
 @Controller
 @RequestMapping("/todos")
-public class TodoController {
+public class TodoController { // http://localhost:8081/TODO/todos/
 	
 	@Autowired
 	private TodoService todoService;
@@ -72,9 +72,7 @@ public class TodoController {
 					  RedirectAttributes attr, Principal principal) {
 		String username = principal.getName();
 		log.debug("新增待辦事項: {}", username);
-		if(result.hasErrors()) {
-			return "todo/list";
-		}
+		
 		try {
 			
 			todo.setTusername(username);
@@ -93,33 +91,37 @@ public class TodoController {
 	
 	// 修改
 	@PutMapping("/{id}")
-	public String update(@Valid @ModelAttribute Todo todo, BindingResult result,
-			  			 RedirectAttributes attr, Principal principal,
-			          	 @PathVariable("id") int id) {
-		if(result.hasErrors()) {
-			return "redirect:error";
+	public String update(Todo todo,RedirectAttributes attr, Principal principal,
+			          	 @PathVariable("id") Long id) {
+		
+		try {
+			Todo existtodo = todoService.getTodo(id);
+			validateUserAccess(principal.getName(), existtodo); // 驗證用戶權限
+			todo.setTid(id);
+	        todo.setTusername(principal.getName());
+	        todo.setUpdatedAt(LocalDateTime.now());
+	        todoService.updateTodo(todo);
+	        
+	        attr.addFlashAttribute("message", "更新成功");
+	        return "redirect:/todos/";
+		} catch (Exception e) {
+			attr.addFlashAttribute("message", "更新失敗：" + e.getMessage());
+	        return "redirect:/todos/";
 		}
-		List<Todo> todos = todoService.getUserTodos(principal.getName());
-		todos.set(id, todo);
-		// 將 todo 物件資料傳遞給 /updateOK，再傳給 success.html 顯示, 可以防止二次 submit
-		attr.addFlashAttribute("todo", todo); 
-		attr.addFlashAttribute("message","修改成功");
-		return "redirect:updateOK"; 
 	}
 	
 	// 刪除
 	@DeleteMapping("/{id}")
-	public String delete(@Valid @ModelAttribute Todo todo, RedirectAttributes attr,
-						 @PathVariable("id") int id, Principal principal) {
+	public String delete(RedirectAttributes attr,
+						 @PathVariable("id") Long id, Principal principal) {
 		try {
-			List<Todo> todos = todoService.getUserTodos(principal.getName());
-			Todo removeTodo = todos.remove(id);
-			attr.addFlashAttribute("removeTodo", removeTodo);
+	        Todo todo = todoService.getTodo(id);
+	        validateUserAccess(principal.getName(), todo);
+	    
+	        todoService.deleteTodo(id);
+	        
 	        attr.addFlashAttribute("message", "刪除成功");
-	        return "redirect:deleteOK";
-		} catch (IndexOutOfBoundsException e) {
-			attr.addFlashAttribute("message", "刪除資料錯誤：索引不存在");
-	        return "redirect:error";
+	        return "redirect:/todos/";
 		} catch (Exception e) {
 	        attr.addFlashAttribute("message", "刪除資料錯誤：" + e.getMessage());
 	        return "redirect:error";
@@ -150,7 +152,7 @@ public class TodoController {
     }
 	
 	// 操作成功
-	@GetMapping(value = { "/addOK", "/updateOK", "/deleteOK" })
+	@GetMapping(value = {"/deleteOK" })
 	public String success() {
 		return "success";
 	}
