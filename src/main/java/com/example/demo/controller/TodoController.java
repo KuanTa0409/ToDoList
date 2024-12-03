@@ -33,17 +33,16 @@ public class TodoController {
 	@Autowired
 	private TodoService todoService;
 	
-	private static final Logger logger = LoggerFactory.getLogger(TodoController.class);
+	private static final Logger log = LoggerFactory.getLogger(TodoController.class);
 	
 	// 首頁(查詢該用戶 所有待辦事項)
 	@GetMapping("/")
-	public String showList(Model model,Principal principal, HttpSession session) {
-		String username = (String)session.getAttribute("username");
-		if(username == null) {
-			return "redirect:/error";
-		}
+	public String showList(Model model, Principal principal) {
+		String username = principal.getName();
+		log.debug("顯示用戶待辦事項: {}", username);
 		
-		List<Todo> todos = todoService.getUserTodos(principal.getName());
+		List<Todo> todos = todoService.getUserTodos(username);
+		model.addAttribute("username", username);
 		model.addAttribute("todos", todos);
 		return "todo/list";
 	}
@@ -71,19 +70,21 @@ public class TodoController {
 	@PostMapping("/")
 	public String add(@Valid @ModelAttribute Todo todo, BindingResult result,
 					  RedirectAttributes attr, Principal principal) {
+		String username = principal.getName();
+		log.debug("新增待辦事項: {}", username);
 		if(result.hasErrors()) {
 			return "todo/list";
 		}
 		try {
 			
-			todo.setTusername(principal.getName());
+			todo.setTusername(username);
 			todo.setCreatedAt(LocalDateTime.now());
 	        todo.setUpdatedAt(LocalDateTime.now());
 	        todo.setCompleted(false);
 	        todoService.addTodo(todo);
 	        
 			attr.addFlashAttribute("message","新增成功");
-			return "list";
+			return "redirect:./";
 		} catch (Exception e) {
 			attr.addFlashAttribute("message", "新增失敗：" + e.getMessage());
 	        return "redirect:error";

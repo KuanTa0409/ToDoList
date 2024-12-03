@@ -10,7 +10,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.entity.Todo;
+import com.example.demo.entity.User;
 import com.example.demo.repository.TodoDao;
+import com.example.demo.repository.UserDao;
 
 @Service
 public class TodoService {
@@ -19,6 +21,9 @@ public class TodoService {
 	
 	@Autowired
 	private TodoDao todoDao;
+	
+	@Autowired
+	private UserDao userDao;
 	
 	// 取得個別用戶待辦事項
 	public Todo getTodo(Long tid) {
@@ -32,7 +37,12 @@ public class TodoService {
 		if(todo.getDescription() == null || todo.getDescription().trim().isEmpty()) {
 			throw new RuntimeException("待辦事項，敘述不能為空");
 		}
-        todoDao.save(todo);
+		
+		User user = userDao.findByUsername(todo.getTusername())
+	            .orElseThrow(() -> new RuntimeException("用戶不存在"));
+	    todo.setUser(user);
+
+	    todoDao.save(todo);
         log.info("Saved successfully! user: {}", todo.getTusername());
 	}
 	

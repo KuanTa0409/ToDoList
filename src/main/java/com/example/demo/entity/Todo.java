@@ -2,6 +2,7 @@ package com.example.demo.entity;
 
 import java.time.LocalDateTime;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
@@ -20,6 +21,7 @@ public class Todo {
 	private LocalDateTime updatedAt; //自動 更新時間
 	
 	//多(Todo)對一(User)，多方維護
+	@NotNull(message = "用戶不能為空")
 	private User user;
 
 	public Long getTid() {
