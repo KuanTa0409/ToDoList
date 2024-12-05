@@ -824,3 +824,150 @@ java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 1
 2024-12-03 16:20:55 [RMI TCP Connection(39)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
 2024-12-03 16:20:55 [RMI TCP Connection(39)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
 2024-12-03 16:20:55 [RMI TCP Connection(39)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-12-03 16:30:10 [restartedMain] INFO  c.example.demo.ToDoListApplication - Starting ToDoListApplication using Java 21.0.4 with PID 19108 (C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList\target\classes started by KuanTa in C:\Users\KuanTa\Documents\workspace-spring-tool-suite-4-4.25.0.RELEASE\ToDoList)
+2024-12-03 16:30:10 [restartedMain] DEBUG c.example.demo.ToDoListApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-12-03 16:30:10 [restartedMain] INFO  c.example.demo.ToDoListApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-03 16:30:10 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-03 16:30:10 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-03 16:30:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2024-12-03 16:30:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 16:30:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-12-03 16:30:11 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring embedded WebApplicationContext
+2024-12-03 16:30:11 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1382 ms
+2024-12-03 16:30:12 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e70756, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73c8f67a, org.springframework.security.web.context.SecurityContextHolderFilter@4d336178, org.springframework.security.web.header.HeaderWriterFilter@43d435a8, org.springframework.web.filter.CorsFilter@44875474, org.springframework.security.web.csrf.CsrfFilter@7c3317ff, org.springframework.security.web.authentication.logout.LogoutFilter@61494e81, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d9d5cb3, org.springframework.security.web.session.ConcurrentSessionFilter@770be0cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18d028ae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d9510ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c11ba1d, org.springframework.security.web.session.SessionManagementFilter@599e382f, org.springframework.security.web.access.ExceptionTranslationFilter@5f07aec8, org.springframework.security.web.access.intercept.AuthorizationFilter@3628ceee]
+2024-12-03 16:30:12 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-03 16:30:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/TODO'
+2024-12-03 16:30:12 [restartedMain] INFO  c.example.demo.ToDoListApplication - Started ToDoListApplication in 2.866 seconds (process running for 3.745)
+2024-12-03 16:30:28 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/TODO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 16:30:28 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 16:30:28 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-03 16:30:52 [http-nio-8081-exec-5] INFO  c.e.demo.controller.AuthController - 用戶註冊: allen01
+2024-12-03 16:30:52 [http-nio-8081-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-03 16:30:53 [http-nio-8081-exec-5] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a769524
+2024-12-03 16:30:53 [http-nio-8081-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-03 16:30:53 [http-nio-8081-exec-5] INFO  c.example.demo.service.UserService - 開始註冊新用戶: allen01
+2024-12-03 16:30:53 [http-nio-8081-exec-5] INFO  c.example.demo.service.UserService - 用戶註冊成功: allen01
+2024-12-03 16:30:53 [http-nio-8081-exec-5] INFO  c.e.demo.controller.AuthController - 用戶註冊成功，下一步請填寫詳細資料: allen01
+2024-12-03 16:32:10 [http-nio-8081-exec-6] INFO  c.e.demo.controller.UserController - 用戶詳細資料: 12
+2024-12-03 16:32:10 [http-nio-8081-exec-6] INFO  c.e.demo.service.UserDetailService - 保存用戶詳細資料: 12
+2024-12-03 16:32:10 [http-nio-8081-exec-6] ERROR c.e.demo.controller.UserController - 用戶詳細資料註冊失敗: 12, 原因: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO user_detail (uid, name, age, birth, gender, education, interest, resume) VALUES (?, ?, ?, ?, ?, ?, ?, ?)]; SQL state [HY000]; error code [3819]; Check constraint 'chk_name_length' is violated.
+2024-12-03 16:37:10 [http-nio-8081-exec-10] INFO  c.e.demo.controller.UserController - 用戶詳細資料: 12
+2024-12-03 16:37:10 [http-nio-8081-exec-10] INFO  c.e.demo.service.UserDetailService - 保存用戶詳細資料: 12
+2024-12-03 16:37:10 [http-nio-8081-exec-10] INFO  c.e.demo.service.UserDetailService - 保存成功!: 12
+2024-12-03 16:37:10 [http-nio-8081-exec-10] INFO  c.e.demo.controller.UserController - 用戶詳細資料註冊成功: 12
+2024-12-03 16:38:19 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: allen01
+2024-12-03 16:38:26 [http-nio-8081-exec-9] DEBUG c.e.demo.controller.UserController - 編輯個人基本資料: allen01
+2024-12-03 16:38:37 [http-nio-8081-exec-7] INFO  c.e.demo.controller.UserController - 用戶資料更新: 12
+2024-12-03 16:39:09 [http-nio-8081-exec-10] INFO  c.e.demo.controller.UserController - 用戶資料更新: 12
+2024-12-03 16:39:09 [http-nio-8081-exec-10] INFO  c.e.demo.service.UserDetailService - Update user detail for uid: 12
+2024-12-03 16:39:09 [http-nio-8081-exec-10] INFO  c.e.demo.service.UserDetailService - updated successfully!: 12
+2024-12-03 16:39:09 [http-nio-8081-exec-10] INFO  c.e.demo.controller.UserController - 用戶資料更新成功: 12
+2024-12-03 16:39:09 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: allen01
+2024-12-03 16:39:26 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.UserController - 編輯個人基本資料: allen01
+2024-12-03 16:39:31 [http-nio-8081-exec-2] INFO  c.e.demo.controller.UserController - 用戶資料更新: 12
+2024-12-03 16:39:31 [http-nio-8081-exec-2] INFO  c.e.demo.service.UserDetailService - Update user detail for uid: 12
+2024-12-03 16:39:31 [http-nio-8081-exec-2] INFO  c.e.demo.service.UserDetailService - updated successfully!: 12
+2024-12-03 16:39:31 [http-nio-8081-exec-2] INFO  c.e.demo.controller.UserController - 用戶資料更新成功: 12
+2024-12-03 16:39:31 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: allen01
+2024-12-03 16:39:48 [http-nio-8081-exec-9] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:39:48 [http-nio-8081-exec-9] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:39:52 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: allen01
+2024-12-03 16:39:52 [http-nio-8081-exec-7] INFO  c.example.demo.service.TodoService - Saving todo: Todo [tid=null, tusername=allen01, description=我要去運動, completed=false, createdAt=2024-12-03T16:39:52.269397600, updatedAt=2024-12-03T16:39:52.269397600, user=null]
+2024-12-03 16:39:52 [http-nio-8081-exec-7] INFO  c.example.demo.service.TodoService - Saved successfully! user: allen01
+2024-12-03 16:39:52 [http-nio-8081-exec-10] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:39:52 [http-nio-8081-exec-10] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:39:54 [http-nio-8081-exec-1] INFO  c.example.demo.service.TodoService - Update todo for id: 7
+2024-12-03 16:39:54 [http-nio-8081-exec-1] INFO  c.example.demo.service.TodoService - Updated successfully!: 7
+2024-12-03 16:39:54 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:39:54 [http-nio-8081-exec-3] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:39:58 [http-nio-8081-exec-5] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: allen01
+2024-12-03 16:39:58 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Saving todo: Todo [tid=null, tusername=allen01, description=討論報告, completed=false, createdAt=2024-12-03T16:39:58.677063, updatedAt=2024-12-03T16:39:58.677063, user=null]
+2024-12-03 16:39:58 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Saved successfully! user: allen01
+2024-12-03 16:39:58 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:39:58 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:40:07 [http-nio-8081-exec-8] INFO  c.example.demo.service.TodoService - Update todo for id: 8
+2024-12-03 16:40:07 [http-nio-8081-exec-8] INFO  c.example.demo.service.TodoService - Updated successfully!: 8
+2024-12-03 16:40:07 [http-nio-8081-exec-6] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:40:07 [http-nio-8081-exec-6] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:40:09 [http-nio-8081-exec-9] INFO  c.example.demo.service.TodoService - Update todo for id: 7
+2024-12-03 16:40:09 [http-nio-8081-exec-9] INFO  c.example.demo.service.TodoService - Updated successfully!: 7
+2024-12-03 16:40:09 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:40:09 [http-nio-8081-exec-7] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:40:13 [http-nio-8081-exec-1] INFO  c.example.demo.service.TodoService - Delete todo for id: 7
+2024-12-03 16:40:13 [http-nio-8081-exec-1] INFO  c.example.demo.service.TodoService - Deleted successfully!: 7
+2024-12-03 16:40:13 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:40:13 [http-nio-8081-exec-3] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:40:27 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: allen01
+2024-12-03 16:40:29 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:40:29 [http-nio-8081-exec-8] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:40:31 [http-nio-8081-exec-6] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: allen01
+2024-12-03 16:40:45 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: allen01
+2024-12-03 16:40:47 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:40:47 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:40:53 [http-nio-8081-exec-2] INFO  c.example.demo.service.TodoService - Update todo for id: 8
+2024-12-03 16:40:53 [http-nio-8081-exec-2] INFO  c.example.demo.service.TodoService - Updated successfully!: 8
+2024-12-03 16:40:53 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:40:53 [http-nio-8081-exec-8] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:40:54 [http-nio-8081-exec-6] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: allen01
+2024-12-03 16:41:38 [http-nio-8081-exec-10] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:41:38 [http-nio-8081-exec-10] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:41:55 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: allen01
+2024-12-03 16:41:55 [http-nio-8081-exec-1] INFO  c.example.demo.service.TodoService - Saving todo: Todo [tid=null, tusername=allen01, description=找健身房, completed=false, createdAt=2024-12-03T16:41:55.001664400, updatedAt=2024-12-03T16:41:55.001664400, user=null]
+2024-12-03 16:41:55 [http-nio-8081-exec-1] INFO  c.example.demo.service.TodoService - Saved successfully! user: allen01
+2024-12-03 16:41:55 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:41:55 [http-nio-8081-exec-3] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:42:00 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Update todo for id: 9
+2024-12-03 16:42:00 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Updated successfully!: 9
+2024-12-03 16:42:00 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:42:00 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:42:02 [http-nio-8081-exec-2] INFO  c.example.demo.service.TodoService - Update todo for id: 9
+2024-12-03 16:42:02 [http-nio-8081-exec-2] INFO  c.example.demo.service.TodoService - Updated successfully!: 9
+2024-12-03 16:42:02 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:42:02 [http-nio-8081-exec-8] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:42:13 [http-nio-8081-exec-9] INFO  c.example.demo.service.TodoService - Update todo for id: 9
+2024-12-03 16:42:13 [http-nio-8081-exec-9] INFO  c.example.demo.service.TodoService - Updated successfully!: 9
+2024-12-03 16:42:13 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:42:13 [http-nio-8081-exec-7] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:42:21 [http-nio-8081-exec-1] INFO  c.example.demo.service.TodoService - Delete todo for id: 9
+2024-12-03 16:42:21 [http-nio-8081-exec-1] INFO  c.example.demo.service.TodoService - Deleted successfully!: 9
+2024-12-03 16:42:21 [http-nio-8081-exec-3] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: allen01
+2024-12-03 16:42:21 [http-nio-8081-exec-3] DEBUG c.example.demo.service.TodoService - User Todo list，user: allen01
+2024-12-03 16:44:08 [http-nio-8081-exec-2] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: allen01
+2024-12-03 16:44:44 [http-nio-8081-exec-10] INFO  c.e.demo.controller.AuthController - 用戶註冊: TONY1006
+2024-12-03 16:44:44 [http-nio-8081-exec-10] INFO  c.example.demo.service.UserService - 開始註冊新用戶: TONY1006
+2024-12-03 16:44:44 [http-nio-8081-exec-10] INFO  c.example.demo.service.UserService - 用戶註冊成功: TONY1006
+2024-12-03 16:44:44 [http-nio-8081-exec-10] INFO  c.e.demo.controller.AuthController - 用戶註冊成功，下一步請填寫詳細資料: TONY1006
+2024-12-03 16:45:25 [http-nio-8081-exec-5] INFO  c.e.demo.controller.UserController - 用戶詳細資料: 13
+2024-12-03 16:45:25 [http-nio-8081-exec-5] INFO  c.e.demo.service.UserDetailService - 保存用戶詳細資料: 13
+2024-12-03 16:45:25 [http-nio-8081-exec-5] INFO  c.e.demo.service.UserDetailService - 保存成功!: 13
+2024-12-03 16:45:25 [http-nio-8081-exec-5] INFO  c.e.demo.controller.UserController - 用戶詳細資料註冊成功: 13
+2024-12-03 16:45:51 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: TONY1006
+2024-12-03 16:46:04 [http-nio-8081-exec-9] DEBUG c.e.demo.controller.UserController - 編輯個人基本資料: TONY1006
+2024-12-03 16:46:07 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: TONY1006
+2024-12-03 16:46:09 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: TONY1006
+2024-12-03 16:46:09 [http-nio-8081-exec-1] DEBUG c.example.demo.service.TodoService - User Todo list，user: TONY1006
+2024-12-03 16:46:25 [http-nio-8081-exec-5] DEBUG c.e.demo.controller.TodoController - 新增待辦事項: TONY1006
+2024-12-03 16:46:25 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Saving todo: Todo [tid=null, tusername=TONY1006, description=找ˋ健身房, completed=false, createdAt=2024-12-03T16:46:25.942299400, updatedAt=2024-12-03T16:46:25.942299400, user=null]
+2024-12-03 16:46:25 [http-nio-8081-exec-5] INFO  c.example.demo.service.TodoService - Saved successfully! user: TONY1006
+2024-12-03 16:46:25 [http-nio-8081-exec-4] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: TONY1006
+2024-12-03 16:46:25 [http-nio-8081-exec-4] DEBUG c.example.demo.service.TodoService - User Todo list，user: TONY1006
+2024-12-03 16:46:34 [http-nio-8081-exec-8] INFO  c.example.demo.service.TodoService - Update todo for id: 10
+2024-12-03 16:46:34 [http-nio-8081-exec-8] INFO  c.example.demo.service.TodoService - Updated successfully!: 10
+2024-12-03 16:46:34 [http-nio-8081-exec-6] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: TONY1006
+2024-12-03 16:46:34 [http-nio-8081-exec-6] DEBUG c.example.demo.service.TodoService - User Todo list，user: TONY1006
+2024-12-03 16:46:38 [http-nio-8081-exec-9] INFO  c.example.demo.service.TodoService - Update todo for id: 10
+2024-12-03 16:46:38 [http-nio-8081-exec-9] INFO  c.example.demo.service.TodoService - Updated successfully!: 10
+2024-12-03 16:46:38 [http-nio-8081-exec-7] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: TONY1006
+2024-12-03 16:46:38 [http-nio-8081-exec-7] DEBUG c.example.demo.service.TodoService - User Todo list，user: TONY1006
+2024-12-03 16:46:38 [http-nio-8081-exec-10] INFO  c.example.demo.service.TodoService - Update todo for id: 10
+2024-12-03 16:46:38 [http-nio-8081-exec-10] INFO  c.example.demo.service.TodoService - Updated successfully!: 10
+2024-12-03 16:46:38 [http-nio-8081-exec-1] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: TONY1006
+2024-12-03 16:46:38 [http-nio-8081-exec-1] DEBUG c.example.demo.service.TodoService - User Todo list，user: TONY1006
+2024-12-03 16:46:39 [http-nio-8081-exec-3] INFO  c.example.demo.service.TodoService - Update todo for id: 10
+2024-12-03 16:46:39 [http-nio-8081-exec-3] INFO  c.example.demo.service.TodoService - Updated successfully!: 10
+2024-12-03 16:46:39 [http-nio-8081-exec-5] DEBUG c.e.demo.controller.TodoController - 顯示用戶待辦事項: TONY1006
+2024-12-03 16:46:39 [http-nio-8081-exec-5] DEBUG c.example.demo.service.TodoService - User Todo list，user: TONY1006
+2024-12-03 16:49:07 [http-nio-8081-exec-8] DEBUG c.e.demo.controller.UserController - 顯示用戶主頁: TONY1006
+2024-12-03 16:49:57 [RMI TCP Connection(29)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-12-03 16:49:57 [RMI TCP Connection(29)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-03 16:49:57 [RMI TCP Connection(29)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

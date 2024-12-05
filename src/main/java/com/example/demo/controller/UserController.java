@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.demo.entity.User;
 import com.example.demo.entity.UserDetail;
@@ -95,6 +96,16 @@ public class UserController {
 			log.error("用戶詳細資料註冊失敗: {}, 原因: {}", userDetail.getUid(), e.getMessage());
 			return "user/register_detail";
 		}
+	}
+	
+	@GetMapping("/profile")
+	public String viewProfile(Model model, Principal principal) {
+		String username = principal.getName();
+		User user = userService.getUserByUsername(username);
+		UserDetail userDetail = userDetailService.getUserDetail(user.getId());
+		model.addAttribute("userDetail", userDetail);
+		return "user/profile";
+		
 	}
 	
 	// 登入後，顯示個人資料
