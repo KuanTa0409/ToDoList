@@ -3,14 +3,12 @@ package com.example.demo.repository.DaoImpl;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
-
 import com.example.demo.entity.User;
 import com.example.demo.repository.UserDao;
 

@@ -3,12 +3,10 @@ package com.example.demo.repository.DaoImpl;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-
 import com.example.demo.entity.Todo;
 import com.example.demo.repository.TodoDao;
 

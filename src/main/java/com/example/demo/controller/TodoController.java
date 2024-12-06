@@ -23,7 +23,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.example.demo.entity.Todo;
 import com.example.demo.service.TodoService;
 
-import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
 @Controller
@@ -150,12 +149,6 @@ public class TodoController { // http://localhost:8081/TODO/todos/
             return "redirect:error";
         }
     }
-	
-	// 操作成功
-	@GetMapping(value = {"/deleteOK" })
-	public String success() {
-		return "success";
-	}
 	
 	// 操作失敗
 	@GetMapping(value = "/error")

@@ -1,11 +1,8 @@
 package com.example.demo.entity;
 
 import java.time.LocalDateTime;
-
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
 
-@Data
 public class Todo {
 
 	private Long tid;
