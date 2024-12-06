@@ -25,11 +25,15 @@
 							    <p th:if="${error != null}" th:text="${error}"></p>
 							    <p th:unless="${error != null}">登入失敗，請檢查使用者名稱和密碼</p>
 							</div>
+                            <div class="row justify-content-center gap-2">
+								<div class="col-auto">
+									<button type="submit" class="btn btn-primary">登入</button>
+								</div>
+								<div class="col-auto">
+									<a th:href="@{/auth/register}" class="btn btn-secondary">註冊</a>
+								</div>
+							</div>
                             
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-primary">login</button>
-                                <a th:href="@{/auth/register}" class="btn btn-secondary">register</a>
-                            </div>
                         </form>
                     </div>
                 </div>

@@ -16,28 +16,28 @@ public class UserDetail {
 		
 	private Long uid;
 	
-	@NotBlank
-    @Size(max = 12)
+	@NotBlank(message = "{NotBlank.userDetail.name}")
+    @Size(max = 12, message = "{Size.userDetail.name}")
 	private String name; //姓名
 	
-	@Min(value = 12)
-    @Max(value = 100)
+	@Min(value = 12, message = "{Min.userDetail.age}")
+    @Max(value = 100, message = "{Max.userDetail.age}")
 	private Integer age;
 	
-	@NotNull
-    @Past
+	@NotNull(message = "{NotNull.userDetail.birth}")
+    @Past(message = "{Past.userDetail.birth}")
 	private LocalDate birth;
 	
-	@NotBlank
+	@NotBlank(message = "{NotBlank.userDetail.gender}")
 	private String gender; //性別
 	
-	@NotBlank
+	@NotBlank(message = "{NotBlank.userDetail.education}")
 	private String education;
 	
-	@NotEmpty
+	@NotEmpty(message = "{NotEmpty.userDetail.interest}")
 	private  List<String> interest;
 	
-	@Size(max = 500)
+	@Size(max = 150, message = "{Size.userDetail.resume}")
 	private String resume;
 	
 	private LocalDateTime createtime;

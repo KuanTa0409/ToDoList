@@ -30,19 +30,19 @@
                                 <!-- th:classappend，當表單驗證失敗時 輸入框變成紅色 -->
                                 <input type="text" th:field="*{name}" class="form-control" 
                                 	   th:classappend="${#fields.hasErrors('name')} ? 'is-invalid'" required>
-                                <div class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+                                <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label required-field">年齡</label>
                                 <input type="number" th:field="*{age}" class="form-control"
                                        th:classappend="${#fields.hasErrors('age')} ? 'is-invalid'" required>
-                                <div class="error-message" th:each="err : ${#fields.errors('age')}" th:text="${err}"></div>
+                                <div th:if="${#fields.hasErrors('age')}" th:errors="*{age}" class="error-message"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label required-field">出生日期</label>
                                 <input type="date" th:field="*{birth}" class="form-control"
                                        th:classappend="${#fields.hasErrors('birth')} ? 'is-invalid'" required>
-                                <div class="error-message" th:each="err : ${#fields.errors('birth')}" th:text="${err}"></div>
+                                <div th:if="${#fields.hasErrors('birth')}" th:errors="*{birth}" class="error-message"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label required-field">性別</label>
@@ -52,7 +52,7 @@
                                     <option value="male">男</option>
                                     <option value="female">女</option>
                                 </select>
-                                <div class="error-message" th:each="err : ${#fields.errors('gender')}" th:text="${err}"></div>
+                                <div th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}" class="error-message"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">教育程度：</label>
@@ -62,7 +62,7 @@
                                     <option value="college">大學</option>
                                     <option value="graduate">研究所</option>
                                 </select>
-                                <div class="error-message" th:each="err : ${#fields.errors('education')}" th:text="${err}"></div>
+                                <div th:if="${#fields.hasErrors('education')}" th:errors="*{education}" class="error-message"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">興趣：</label>
@@ -82,17 +82,22 @@
                                 <input type="checkbox" th:field="*{interest}" value="music" class="form-check-input">
                                     <label class="form-check-label">其他(請在簡歷上敘述)</label>
                                 </div>
-                                <div class="error-message" th:each="err : ${#fields.errors('interest')}" th:text="${err}"></div>
+                                <div th:if="${#fields.hasErrors('interest')}" th:errors="*{interest}" class="error-message"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">簡歷：</label>
                                 <textarea th:field="*{resume}" class="form-control" rows="3"></textarea>
-                                <div class="error-message" th:each="err : ${#fields.errors('resume')}" th:text="${err}"></div>
+                                <div th:if="${#fields.hasErrors('resume')}" th:errors="*{resume}"  class="error-message"></div>
                             </div>
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-primary">送出</button>
-                                <a th:href="@{/auth/register}" class="btn btn-secondary">上一步</a>
-                            </div>
+                            <div class="row justify-content-center gap-2">
+								<div class="col-auto">
+									<button type="submit" class="btn btn-primary">送出</button>
+								</div>
+								<div class="col-auto">
+									<a th:href="@{/auth/register}" class="btn btn-secondary">上一步</a>
+								</div>
+							</div>
+                            
                         </form>
                     </div>
                 </div>

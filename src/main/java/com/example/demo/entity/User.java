@@ -8,13 +8,13 @@ public class User {
 	
 	private Long id;
 	
-	@NotBlank
-	@Size(min = 5, max = 50)
-	@Pattern(regexp = "^[a-zA-Z0-9]+$")
+	@NotBlank(message = "{NotBlank.user.username}")
+	@Size(min = 5, max = 50, message = "{Size.user.username}")
+	@Pattern(regexp = "^[a-zA-Z0-9]+$", message = "{Pattern.user.username}")
 	private String username; //使用者帳號
 	
-	@NotBlank
-	@Size(min = 6, max = 20)
+	@NotBlank(message = "{NotBlank.user.password}")
+	@Size(min = 6, max = 20, message = "{Size.user.password}")
 	private String password; //使用者密碼
 	
 	private Todo todo;
