@@ -47,8 +47,8 @@
                             <div class="mb-3">
                                 <label class="form-label">興趣：</label>
                                 <div class="form-check">
-                                    <input type="checkbox" th:field="*{interest}" value="reading" class="form-check-input">
-                                    <label class="form-check-label">閱讀</label>
+                                    <input type="checkbox" th:field="*{interest}" value="camping" class="form-check-input">
+                                    <label class="form-check-label">踏青</label>
                                 </div>
                                 <div class="form-check">
                                     <input type="checkbox" th:field="*{interest}" value="sports" class="form-check-input">
@@ -67,10 +67,14 @@
                                 <label class="form-label">簡歷：</label>
                                 <textarea th:field="*{resume}" class="form-control" rows="3"></textarea>
                             </div>
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-primary">更新</button>
-                                <a th:href="@{/user/index}" class="btn btn-secondary">返回主頁</a>
-                            </div>
+                            <div class="row justify-content-center gap-2">
+							    <div class="col-auto">
+							        <button type="submit" class="btn btn-primary">更新</button>
+							    </div>
+							    <div class="col-auto">
+							        <a th:href="@{/user/index}" class="btn btn-secondary">主頁</a>
+							    </div>
+							</div>
                         </form>
                     </div>
                 </div>

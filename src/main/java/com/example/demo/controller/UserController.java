@@ -105,7 +105,6 @@ public class UserController {
 		UserDetail userDetail = userDetailService.getUserDetail(user.getId());
 		model.addAttribute("userDetail", userDetail);
 		return "user/profile";
-		
 	}
 	
 	// 登入後，顯示個人資料

@@ -19,6 +19,11 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
   
+  # Message 配置
+  messages:
+    basename: ValidationMessages
+    encoding: UTF-8
+
   # Spring MVC 配置
   mvc:
     static-path-pattern: /**

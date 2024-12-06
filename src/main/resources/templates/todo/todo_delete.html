@@ -13,7 +13,7 @@
                     <div class="card-body">
                         <h3 class="card-title text-center mb-4">確認刪除</h3>
                         <div class="alert alert-warning">
-                            確定要刪除這個待辦事項嗎？
+                            確定刪除此待辦事項嗎？
                         </div>
                         <div class="mb-3">
                             <p><strong>描述：</strong> <span th:text="${todo.description}"></span></p>
@@ -22,10 +22,14 @@
                         </div>
                         <form th:action="@{/todos/{id}(id=${todo.tid})}" method="post">
                             <input type="hidden" name="_method" value="DELETE">
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-danger">確認刪除</button>
-                                <a th:href="@{/todos/}" class="btn btn-secondary">取消</a>
-                            </div>
+                            <div class="row justify-content-center gap-2">
+								<div class="col-auto">
+									<button type="submit" class="btn btn-danger">確認刪除</button>
+								</div>
+								<div class="col-auto">
+									<a th:href="@{/todos/}" class="btn btn-secondary">取消</a>
+								</div>
+							</div>
                         </form>
                     </div>
                 </div>

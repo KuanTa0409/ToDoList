@@ -48,8 +48,10 @@
 							<div class="col-md-4 profile-label">興趣</div>
 							<div class="col-md-8 profile-value">
 								<span th:each="interest, iterStat : ${userDetail.interest}">
-									<span th:switch="${interest}"> <span th:case="'reading'">閱讀</span>
-										<span th:case="'sports'">運動</span> <span th:case="'music'">音樂</span>
+									<span th:switch="${interest}"> 
+										<span th:case="'camping'">踏青</span>
+										<span th:case="'sports'">運動</span> 	
+										<span th:case="'music'">音樂</span>
 										<span th:case="'other'">其他</span>
 								</span> <span th:if="${!iterStat.last}">, </span>
 								</span>
@@ -62,9 +64,13 @@
 							</div>
 						</div>
 
-						<div class="d-grid gap-2">
-							<a th:href="@{/user/profile/edit}" class="btn btn-primary">修改</a>
-							<a th:href="@{/user/index}" class="btn btn-secondary">返回</a>
+						<div class="row justify-content-center gap-2">
+						    <div class="col-auto">
+						        <a th:href="@{/user/profile/edit}" class="btn btn-primary">修改</a>
+						    </div>
+						    <div class="col-auto">
+						        <a th:href="@{/user/index}" class="btn btn-secondary">主頁</a>
+						    </div>
 						</div>
 					</div>
 				</div>
