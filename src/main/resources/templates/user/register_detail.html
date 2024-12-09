@@ -30,7 +30,7 @@
                                 <!-- th:classappend，當表單驗證失敗時 輸入框變成紅色 -->
                                 <input type="text" th:field="*{name}" class="form-control" 
                                 	   th:classappend="${#fields.hasErrors('name')} ? 'is-invalid'" required>
-                                <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></div>
+                                <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="invalid-feedback"></div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label required-field">年齡</label>
@@ -56,7 +56,8 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">教育程度：</label>
-                                <select th:field="*{education}" class="form-select" required>
+                                <select th:field="*{education}" class="form-select"
+                                		th:classappend="${#fields.hasErrors('gender')} ? 'is-invalid'" required>
                                     <option value="">請選擇</option>
                                     <option value="highschool">高中</option>
                                     <option value="college">大學</option>
