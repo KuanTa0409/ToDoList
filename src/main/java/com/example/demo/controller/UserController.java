@@ -70,7 +70,7 @@ public class UserController {
 		
 		UserDetail userDetail = new UserDetail();
 		userDetail.setUid(userId);
-		userDetail.setInterest(new ArrayList<>()); // 初始化興趣列表
+		userDetail.setInterest(new ArrayList<>()); 
 		userDetail.setCreatetime(LocalDateTime.now());
 		model.addAttribute("userDetail", userDetail);
 		return "user/register_detail";

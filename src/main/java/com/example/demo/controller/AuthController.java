@@ -19,7 +19,7 @@ import jakarta.validation.Valid;
 
 @Controller
 @RequestMapping("/auth")
-public class AuthController { // http://localhost:8081/TODO/auth/login
+public class AuthController {   // http://localhost:8081/TODO/auth/login
 
 	private static final Logger log = LoggerFactory.getLogger(AuthController.class);
 
@@ -63,7 +63,8 @@ public class AuthController { // http://localhost:8081/TODO/auth/login
 				userId = savedUser.getId();
 			}
 
-			session.setAttribute("registerUserId", userId); // 將用戶ID存入session，用於下一步填寫詳細資料
+			// 將用戶ID存入session，用於下一步填寫詳細資料
+			session.setAttribute("registerUserId", userId); 
 			log.info("用戶註冊成功，下一步請填寫詳細資料: {}", user.getUsername());
 			return "redirect:/user/register/detail";
 		} catch (RuntimeException e) {

@@ -37,7 +37,7 @@ public class WeatherService {
         	String url = WEATHER_API_URL + "?Authorization=" + authKey;
             ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
             // 解析JSON回應並轉換為Weather對象列表
-            // 這裡需要根據實際API回應格式來調整解析邏輯
+            // 根據實際API回應格式來調整解析邏輯
             if (response.getStatusCode() == HttpStatus.OK) {
                 return parseWeatherData(response.getBody());
             } else {
@@ -50,7 +50,7 @@ public class WeatherService {
         }
     }
 	
-	// 解析氣象局API回傳的JSON資料
+	// API回傳的JSON資料
     private List<Weather> parseWeatherData(String jsonData) {
         List<Weather> weatherList = new ArrayList<>();
         try {

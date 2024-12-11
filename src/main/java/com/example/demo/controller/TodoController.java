@@ -73,7 +73,6 @@ public class TodoController { // http://localhost:8081/TODO/todos/
 		log.debug("新增待辦事項: {}", username);
 		
 		try {
-			
 			todo.setTusername(username);
 			todo.setCreatedAt(LocalDateTime.now());
 	        todo.setUpdatedAt(LocalDateTime.now());
